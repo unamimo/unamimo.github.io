@@ -4,8 +4,8 @@ function App() {
 
   return (
     <>
-      <h1>Title</h1>
-      <div className="card">
+      <h1 style={{border: "2px solid blue"}}>Title</h1>
+      <div className="card" style={{border: "2px solid red" }}>
         <button style={{ margin: "9px" }}>
           Button 1
         </button>
