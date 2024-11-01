@@ -22,7 +22,6 @@ function App() {
           - centred horizontally and vertically using alignItems and justifyContent
         */}
         <div style={{
-          border: "2px solid green",  // remove when merge
           flexGrow: 3,
           overflow: "auto",
           display: "flex",
@@ -32,11 +31,11 @@ function App() {
           width: "100%",
           alignSelf: "center",
           flex: "1 0 auto",
-          alignItems: "center",       // centres divs as well as content, remove for divs to span
-          justifyContent: "center"
+          alignItems: "center",       // centres child divs as well as content, remove for divs to span
+          justifyContent: "center"    // centres child content within content divs
         }}>
-            <h1 style={{border: "2px solid blue", fontSize: "6.5em", textAlign: "center"}}>Title</h1>
-            <div className="card" style={{border: "2px solid red", textAlign: "center"}}>
+            <h1 style={{ fontSize: "6.5em", textAlign: "center" }}>Title</h1>
+            <div className="card" style={{ textAlign: "center"}}>
               <button className='TitleButtons'>
                 Button 1
               </button>
