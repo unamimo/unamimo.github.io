@@ -1,3 +1,4 @@
+/*Base styles, currently not in use, but is a good reference*/
 /* #root {
   margin: 0 auto;
   padding: 2rem;
@@ -18,6 +19,7 @@ body,html {
   box-sizing: border-box;
 }
 
+/*Add styling to the buttons on the title screen */
 .TitleButtons {
   margin: 30px;
   margin-top: 0px;
