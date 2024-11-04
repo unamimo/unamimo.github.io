@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
+import MyLink from "../components/MyLink";
 
 export default function NotFoundPage () {
     return(
         <>
             <div>404 Not Found</div>
             <div>
-                <Link to="/">Go to the home page</Link>
+                <MyLink to="/">Go to the home page</MyLink>
             </div>
         </>
     )
