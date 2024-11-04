@@ -1,5 +1,6 @@
 import './App.css'
 import TitleLayout from '../../layout/TitleLayout'
+import MyLink from '../../components/MyLink'
 
 function App() {
   return (
@@ -9,13 +10,19 @@ function App() {
         <h1 style={{ fontSize: "6.5em", textAlign: "center" }}>Title</h1>
         <div style={{ textAlign: "center"}}>
           <button className='TitleButtons'>
-            Button 1
+            <MyLink to="Page1">
+              Button 1
+            </MyLink>
           </button>
           <button className='TitleButtons'>
-            Button 2
+            <MyLink to="Page2">
+                Button 2
+            </MyLink>
           </button>
           <button className='TitleButtons'>
-            Button 3
+            <MyLink to="Page3">
+              Button 3
+            </MyLink>
           </button>
         </div>
       </TitleLayout>
