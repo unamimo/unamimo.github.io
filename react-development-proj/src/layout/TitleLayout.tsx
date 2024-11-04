@@ -1,9 +1,6 @@
 import { PropsWithChildren, ReactNode } from "react";
 
-// currently includes the title screen code
-// this will need to be seperated out into a layout component for reuse, the actual title screen content will be a child
-
-// all of this code may be moved into different pages, when a pages folder structure is introduced
+// contains the layout for the title screen
 
 interface TitleLayoutProps {
   children?: ReactNode;
