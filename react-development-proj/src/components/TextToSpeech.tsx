@@ -33,10 +33,12 @@ import { useState } from "react";
 // }
 
 export default function TextToSpeech() {
-    // setup narrator to say text
-    const NarratorEnabledSpeech = new SpeechSynthesisUtterance("Narrator enabled");
     // set text on button to say "enable narrator" if narrator is currently not on, and vise versa
     const [isNarratorEnabled, setNarrator] = useState(false);
+
+    // setup narrator to say text
+    const NarratorEnabledSpeech = new SpeechSynthesisUtterance("Narrator enabled");
+    const DisableNarratorSpeech = new SpeechSynthesisUtterance("Disable narrator");
 
     function EnableNarrator() {
         setNarrator(false);
@@ -45,10 +47,11 @@ export default function TextToSpeech() {
     
     return(
         <>
+            {/* Render enable button if the narrator is off, and vise versa */}
             {isNarratorEnabled ?  (
                 <button onClick={() => EnableNarrator()}>Enable narrator</button>
             ) : (
-                <button onClick={() => setNarrator(true)}>Disable narrator</button>
+                <button onFocus={() => speechSynthesis.speak(DisableNarratorSpeech)} onClick={() => setNarrator(true)}>Disable narrator</button>
             )
             }
         </>
