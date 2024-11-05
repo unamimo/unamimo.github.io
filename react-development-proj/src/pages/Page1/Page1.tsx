@@ -1,3 +1,4 @@
+import TextToSpeech from "../../components/TextToSpeech";
 import TitleLayout from "../../layout/TitleLayout";
 
 export default function Page1 (){
@@ -5,6 +6,7 @@ export default function Page1 (){
         <>
             <TitleLayout>
                 Page1
+                <TextToSpeech/>
             </TitleLayout>
         </>
     )
