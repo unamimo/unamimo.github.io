@@ -32,7 +32,9 @@ import { useState } from "react";
 //     }
 // }
 
-export default function TextToSpeech() {
+
+// this file will hopefully be used for turning text to speech on and off, in the future
+export default function TextToSpeechToggle() {
     // set text on button to say "enable narrator" if narrator is currently not on, and vise versa
     const [isNarratorEnabled, setNarrator] = useState(false);
 

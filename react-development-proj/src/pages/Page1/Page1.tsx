@@ -1,4 +1,4 @@
-import TextToSpeech from "../../components/TextToSpeech";
+import TextToSpeech from "../../components/TextToSpeechToggle";
 import TitleLayout from "../../layout/TitleLayout";
 
 export default function Page1 (){
