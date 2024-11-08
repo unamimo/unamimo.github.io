@@ -1,7 +1,17 @@
-let isSpeechEnabled = false;
+import { useTextToSpeech } from "../context/TextToSpeechContext";
 
-export function getTTSOnOff (TextToSpeechEnabled: boolean) {
-    isSpeechEnabled = TextToSpeechEnabled;
+//let isSpeechEnabled = false;
+
+export function voiceText (/*TextToSpeechEnabled: boolean*/ text?: string) {
+    //isSpeechEnabled = TextToSpeechEnabled;
+    const { isNarratorEnabled } = useTextToSpeech()
+
+    console.log(isNarratorEnabled)
+    { isNarratorEnabled ? (
+        handlePlay(text)
+    ) : (
+        handleStop()
+    )};
 };
 
 export function handlePlay(text?: string) {

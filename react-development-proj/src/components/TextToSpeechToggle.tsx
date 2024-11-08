@@ -1,7 +1,6 @@
 //import { useEffect, useState } from "react";
-
-import { useState } from "react";
-import { handlePlay } from "./TextToSpeech";
+import { voiceText } from "./TextToSpeech";
+import { useTextToSpeech } from "../context/TextToSpeechContext";
 
 // interface TextToSpeechProps{
 //     text: string
@@ -36,26 +35,31 @@ import { handlePlay } from "./TextToSpeech";
 
 // this file will hopefully be used for turning text to speech on and off, in the future
 export default function TextToSpeechToggle() {
+    // testing context
+    const { isNarratorEnabled, turnOn, turnOff } = useTextToSpeech();
+
+
     // set text on button to say "enable narrator" if narrator is currently not on, and vise versa
-    const [isNarratorEnabled, setNarrator] = useState(false);
+    //const [isNarratorEnabled, setNarrator] = useState(false);
 
     // setup narrator to say text
     //const NarratorEnabledSpeech = new SpeechSynthesisUtterance("Narrator enabled");
     //const DisableNarratorSpeech = new SpeechSynthesisUtterance("Disable narrator");
 
     function EnableNarrator() {
-        setNarrator(false);
+        turnOff();
+        console.log(isNarratorEnabled);
         //speechSynthesis.speak(NarratorEnabledSpeech);
-        handlePlay("Narrator enabled");
+        voiceText("Narrator enabled");
     };
     
     return(
         <>
             {/* Render enable button if the narrator is off, and vise versa */}
             {isNarratorEnabled ?  (
-                <button onClick={() => EnableNarrator()}>Enable narrator</button>
+                <button onFocus={() => voiceText("Disable narrator")} onClick={() => turnOn()}>Disable narrator</button>
             ) : (
-                <button onFocus={() => handlePlay("Disable narrator")} onClick={() => setNarrator(true)}>Disable narrator</button>
+                <button onClick={() => EnableNarrator()}>Enable narrator</button>
             )
             }
         </>
