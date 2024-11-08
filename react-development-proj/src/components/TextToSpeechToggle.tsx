@@ -47,7 +47,7 @@ export default function TextToSpeechToggle() {
     //const DisableNarratorSpeech = new SpeechSynthesisUtterance("Disable narrator");
 
     function EnableNarrator() {
-        turnOff();
+        turnOn();
         console.log(isNarratorEnabled);
         //speechSynthesis.speak(NarratorEnabledSpeech);
         voiceText("Narrator enabled");
@@ -57,7 +57,7 @@ export default function TextToSpeechToggle() {
         <>
             {/* Render enable button if the narrator is off, and vise versa */}
             {isNarratorEnabled ?  (
-                <button onFocus={() => voiceText("Disable narrator")} onClick={() => turnOn()}>Disable narrator</button>
+                <button onClick={() => turnOff()}>Disable narrator</button>
             ) : (
                 <button onClick={() => EnableNarrator()}>Enable narrator</button>
             )
