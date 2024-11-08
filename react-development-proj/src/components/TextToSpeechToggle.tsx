@@ -1,6 +1,7 @@
 //import { useEffect, useState } from "react";
 
 import { useState } from "react";
+import { handlePlay } from "./TextToSpeech";
 
 // interface TextToSpeechProps{
 //     text: string
@@ -39,12 +40,13 @@ export default function TextToSpeechToggle() {
     const [isNarratorEnabled, setNarrator] = useState(false);
 
     // setup narrator to say text
-    const NarratorEnabledSpeech = new SpeechSynthesisUtterance("Narrator enabled");
-    const DisableNarratorSpeech = new SpeechSynthesisUtterance("Disable narrator");
+    //const NarratorEnabledSpeech = new SpeechSynthesisUtterance("Narrator enabled");
+    //const DisableNarratorSpeech = new SpeechSynthesisUtterance("Disable narrator");
 
     function EnableNarrator() {
         setNarrator(false);
-        speechSynthesis.speak(NarratorEnabledSpeech);
+        //speechSynthesis.speak(NarratorEnabledSpeech);
+        handlePlay("Narrator enabled");
     };
     
     return(
@@ -53,7 +55,7 @@ export default function TextToSpeechToggle() {
             {isNarratorEnabled ?  (
                 <button onClick={() => EnableNarrator()}>Enable narrator</button>
             ) : (
-                <button onFocus={() => speechSynthesis.speak(DisableNarratorSpeech)} onClick={() => setNarrator(true)}>Disable narrator</button>
+                <button onFocus={() => handlePlay("Disable narrator")} onClick={() => setNarrator(true)}>Disable narrator</button>
             )
             }
         </>
