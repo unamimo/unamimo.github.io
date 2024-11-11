@@ -1,10 +1,11 @@
+import NarratedText from "../../components/NarratedText";
 import TitleLayout from "../../layout/TitleLayout";
 
 export default function Page2 (){
     return (
         <>
             <TitleLayout>
-                Page2
+                <NarratedText text={"Page 2"}/>
             </TitleLayout>
         </>
     )
