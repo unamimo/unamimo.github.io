@@ -1,25 +1,22 @@
 import { useTextToSpeech } from "../context/TextToSpeechContext";
 
-//let isSpeechEnabled = false;
 
-export function voiceText (/*TextToSpeechEnabled: boolean*/ text?: string) {
-    //isSpeechEnabled = TextToSpeechEnabled;
-    const { isNarratorEnabled } = useTextToSpeech()
+export function voiceText (text?: string) {
+    const { isNarratorEnabled } = useTextToSpeech();
 
-    console.log(isNarratorEnabled)
-    { isNarratorEnabled ? (
+    console.log(isNarratorEnabled);
+    isNarratorEnabled ? (
         handlePlay(text)
     ) : (
         handleStop()
-    )};
+    );
 };
 
-export function handlePlay(text?: string) {
-
+function handlePlay(text?: string) {
     const utteranceText = new SpeechSynthesisUtterance(text);
     speechSynthesis.speak(utteranceText);
 }
 
-export function handleStop() {
+function handleStop() {
     window.speechSynthesis.cancel();
 }
