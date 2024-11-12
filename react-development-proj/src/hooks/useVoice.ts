@@ -5,7 +5,6 @@ export function useVoice () {
     const { isNarratorEnabled } = useTextToSpeech();
     
     const voiceText = (text?: string) => {
-        console.log(isNarratorEnabled);
         isNarratorEnabled ? handlePlay(text) : handleStop;
     }
 

@@ -1,5 +1,6 @@
 import { createContext, ReactNode, useContext, useState } from "react";
 
+// component is used to manage if text to speech / narrator is turned on or off throughout application
 
 interface TextToSpeechContextProps {
     isNarratorEnabled: boolean;
@@ -18,8 +19,6 @@ export default function TextToSpeechProvider ({children}: TextToSpeechProviderPr
     const [isNarratorEnabled, setNarratorEnabled] = useState(false);
 
     const turnOn = () => {
-        // set to be opposite of previous setting
-        // e.g. if narrator was on, it is now off, vise versa
         setNarratorEnabled(true);
     };
 
