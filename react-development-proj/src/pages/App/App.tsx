@@ -5,32 +5,32 @@ import NarratedText from '../../components/NarratedText'
 
 function App() {
   return (
-    <>
+    <div role='main'>
       <TitleLayout>
         {/* Move these in-line styles to a CSS file? Could get messy in the future */}
         <h1 style={{ fontSize: "6.5em", textAlign: "center" }}>
           <NarratedText text="Title"/>
         </h1>
-        <div style={{ textAlign: "center"}}>
-          <button className='TitleButtons'>
-            <MyLink to="Page1">
+        <div style={{ textAlign: "center"}} role='navigation'>
+          <MyLink to="Page1">
+            <button className='TitleButtons'>
               Button 1
-            </MyLink>
-          </button>
-          <button className='TitleButtons'>
-            <MyLink to="Page2">
-                Button 2
-            </MyLink>
-          </button>
-          <button className='TitleButtons'>
-            <MyLink to="Page3">
+            </button>
+          </MyLink>
+          <MyLink to="Page2">
+            <button className='TitleButtons'>
+              Button 2
+            </button>
+          </MyLink>
+          <MyLink to="Page3">
+            <button className='TitleButtons'>
               Button 3
-            </MyLink>
-          </button>
+            </button>
+          </MyLink>
         </div>
       </TitleLayout>
-    </>
-  )
-}
+    </div>
+  );
+};
 
 export default App
