@@ -4,11 +4,13 @@ import TitleLayout from "../../layout/TitleLayout";
 
 export default function Page1 (){
     return (
-        <>
+        <div role="main">
             <TitleLayout>
-                <NarratedText text="Page 1"/>
+                <h1>
+                    <NarratedText text="Page 1"/>
+                </h1>
                 <TextToSpeechToggle/>
             </TitleLayout>
-        </>
+        </div>
     )
 }
