@@ -18,7 +18,8 @@ export default function MyLink ({
         <Link
             to={to}
             style={{
-                textDecoration: "none"
+                textDecoration: "none",
+                color: 'inherit'
             }}
         >
             {children}
