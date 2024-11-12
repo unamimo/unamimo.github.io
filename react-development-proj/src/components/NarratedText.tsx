@@ -1,6 +1,6 @@
 import { useVoice } from "../hooks/useVoice"
 
-// this component is used to return both HTML text and voice texted, if the narrator is on
+// this component is used to return both HTML text and voice, if the narrator is on
 
 interface NarratedTextProps {
     text: string
