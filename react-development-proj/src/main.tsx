@@ -7,6 +7,7 @@ import Page1 from './pages/Page1/Page1';
 import Page3 from './pages/Page3/Page3';
 import Page2 from './pages/Page2/Page2';
 import NotFoundPage from './pages/NotFoundPage';
+import TextToSpeechProvider from './context/TextToSpeechContext';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router={router}/>
+    <TextToSpeechProvider>
+      <RouterProvider router={router}/>
+    </TextToSpeechProvider>
   </StrictMode>,
 )
