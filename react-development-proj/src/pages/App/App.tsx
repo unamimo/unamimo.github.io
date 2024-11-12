@@ -1,7 +1,7 @@
 import './App.css'
 import TitleLayout from '../../layout/TitleLayout'
-import MyLink from '../../components/MyLink'
 import NarratedText from '../../components/NarratedText'
+import LinkButton from '../../components/LinkButton';
 
 function App() {
   return (
@@ -12,21 +12,15 @@ function App() {
           <NarratedText text="Title"/>
         </h1>
         <div style={{ textAlign: "center"}} role='navigation'>
-          <MyLink to="Page1">
-            <button className='TitleButtons'>
-              Button 1
-            </button>
-          </MyLink>
-          <MyLink to="Page2">
-            <button className='TitleButtons'>
-              Button 2
-            </button>
-          </MyLink>
-          <MyLink to="Page3">
-            <button className='TitleButtons'>
-              Button 3
-            </button>
-          </MyLink>
+          <LinkButton goTo='Page1'>
+            Button 1
+          </LinkButton>
+          <LinkButton goTo='Page2'>
+            Button 2
+          </LinkButton>
+          <LinkButton goTo='Page3'>
+            Button 3
+          </LinkButton>
         </div>
       </TitleLayout>
     </div>

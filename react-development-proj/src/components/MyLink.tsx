@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 interface MyLinkProps {
     to: string;
-    children: ReactNode
+    children?: ReactNode
 }
 
 export default function MyLink ({
