@@ -12,21 +12,21 @@ function App() {
           <NarratedText text="Title"/>
         </h1>
         <div style={{ textAlign: "center"}}>
-          <button className='TitleButtons'>
-            <MyLink to="Page1">
+          <MyLink to="Page1">
+            <button className='TitleButtons'>
               Button 1
-            </MyLink>
-          </button>
-          <button className='TitleButtons'>
-            <MyLink to="Page2">
-                Button 2
-            </MyLink>
-          </button>
-          <button className='TitleButtons'>
-            <MyLink to="Page3">
+            </button>
+          </MyLink>
+          <MyLink to="Page2">
+            <button className='TitleButtons'>
+              Button 2
+            </button>
+          </MyLink>
+          <MyLink to="Page3">
+            <button className='TitleButtons'>
               Button 3
-            </MyLink>
-          </button>
+            </button>
+          </MyLink>
         </div>
       </TitleLayout>
     </>
