@@ -1,4 +1,10 @@
-.MyLink {
+/* 
+CSS here currently doesn't work by calling classname? 
+Will probably need to investigate this in the future
+For now, disabling styles here, until a way to style is decided upon
+*/
+
+/* .MyLink {
     text-decoration: "none";
     color: 'inherit';
 };
@@ -19,4 +25,4 @@
 .MyLinkAsButton:focus,
 .MyLinkAsButton:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
-}
+} */
