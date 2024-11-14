@@ -19,7 +19,7 @@ function App() {
             Button 2
           </MyLink>
           <MyLink to='page3' renderAsButton={true}>
-            Button 2
+            Button 3
           </MyLink>
         </div>
       </TitleLayout>
