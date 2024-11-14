@@ -8,19 +8,38 @@ import { Link } from "react-router-dom";
 interface MyLinkProps {
     to: string;
     children?: ReactNode
+    renderAsButton?: Boolean
 }
 
 export default function MyLink ({
     to,
-    children
+    children,
+    renderAsButton
 }: MyLinkProps) {
     return(
         <Link
             to={to}
-            style={{
-                textDecoration: "none",
-                color: 'inherit'
-            }}
+            style={
+                renderAsButton ? (
+                    {
+                    margin: "30px",
+                    marginTop: "0px",
+                    backgroundColor: "black",
+                    color: "white",
+                    padding: "1.2em 1.8em",
+                    borderRadius: "8px",
+                    border: "1px solid transparent",
+                    fontSize: "1em",
+                    fontWeight: "500",
+                    textDecoration: "none",
+                    }
+                ) : (
+                    {
+                    textDecoration: "none",
+                    color: 'inherit'
+                    }
+                )
+            }
         >
             {children}
         </Link>
