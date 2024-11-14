@@ -1,0 +1,22 @@
+.MyLink {
+    text-decoration: "none";
+    color: 'inherit';
+};
+
+.MyLinkAsButton {
+    margin: "30px";
+    margin-top: "0px";
+    background-color: "black";
+    color: "white";
+    padding: "1.2em 1.8em";
+    border-radius: "8px";
+    border: "1px solid transparent";
+    font-size: "1em";
+    font-weight: "500";
+    text-decoration: "none";
+};
+
+.MyLinkAsButton:focus,
+.MyLinkAsButton:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}

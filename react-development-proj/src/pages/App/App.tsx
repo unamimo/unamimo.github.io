@@ -1,7 +1,7 @@
 import './App.css'
 import TitleLayout from '../../layout/TitleLayout'
 import NarratedText from '../../components/NarratedText'
-import MyLink from '../../components/MyLink';
+import MyLink from '../../components/MyLink/MyLink';
 
 function App() {
   return (
