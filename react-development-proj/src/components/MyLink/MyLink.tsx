@@ -22,7 +22,6 @@ export default function MyLink ({
 
     return(
         <>
-        {console.log(style)}
         <Link
             to={to}
             className={renderAsButton ? style.myLinkAsButton : style.myLink}
