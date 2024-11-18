@@ -3,10 +3,6 @@ import style from './MyLink.module.css'
 import { useVoice } from "../../hooks/useVoice";
 
 
-// create custom link component to change the default styling
-// this will most likely be replaced by focus, hover and visited global styling in the future
-// if global styling is applied, this component may become redundant in the future
-
 interface MyLinkProps {
     to: string;
     children?: string
