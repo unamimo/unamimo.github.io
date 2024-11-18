@@ -13,13 +13,13 @@ function App() {
         </h1>
         <div style={{ textAlign: "center"}} role='navigation'>
           <MyLink to='page1' renderAsButton={true}>
-            Button 1
+            About
           </MyLink>
           <MyLink to='page2' renderAsButton={true}>
-            Button 2
+            Config
           </MyLink>
           <MyLink to='page3' renderAsButton={true}>
-            Button 3
+            Credits
           </MyLink>
         </div>
       </TitleLayout>
