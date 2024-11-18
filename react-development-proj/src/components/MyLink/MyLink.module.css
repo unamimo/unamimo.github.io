@@ -1,0 +1,35 @@
+/* 
+CSS here currently doesn't work by calling classname? 
+Will probably need to investigate this in the future
+For now, disabling styles here, until a way to style is decided upon
+*/
+.test {
+    color: red;
+    font-size: 24px;
+}
+
+.myLink {
+    text-decoration: "none";
+    color: 'inherit';
+}
+
+.myLinkAsButton {
+    display: inline-block;      /* Allows the element to behave like a block for layout (accepts width/height) while still flowing inline with other content. */
+    cursor: pointer;            /* Indicates to users that the element is clickable. */
+    margin: 30px;
+    margin-top: 0px;
+    background-color: black;
+    color: white;
+    padding: 1.2em 1.8em;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    white-space: normal;
+}
+
+.myLinkAsButton:focus-visible {
+    /* outline: 4px auto -webkit-focus-ring-color; */
+    border: 4px solid white
+}
