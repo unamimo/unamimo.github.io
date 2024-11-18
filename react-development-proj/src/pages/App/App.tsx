@@ -8,18 +8,20 @@ function App() {
     <div role='main'>
       <TitleLayout>
         {/* Move these in-line styles to a CSS file? Could get messy in the future */}
-        <h1 style={{ fontSize: "6.5em", textAlign: "center" }}>
-          <NarratedText text="Title"/>
-        </h1>
+        <div style={{ maxWidth: "500px" }}>
+          <h1 style={{ fontSize: "6.5em", textAlign: "center" }}>
+            <NarratedText text="Accessible menu"/>
+          </h1>
+        </div>
         <div style={{ textAlign: "center"}} role='navigation'>
-          <MyLink to='page1' renderAsButton={true}>
-            Button 1
+          <MyLink to='/About' renderAsButton={true}>
+            About
           </MyLink>
-          <MyLink to='page2' renderAsButton={true}>
-            Button 2
+          <MyLink to='/Config' renderAsButton={true}>
+            Config
           </MyLink>
-          <MyLink to='page3' renderAsButton={true}>
-            Button 3
+          <MyLink to='/Credits' renderAsButton={true}>
+            Credits
           </MyLink>
         </div>
       </TitleLayout>
