@@ -1,12 +1,12 @@
 import NarratedText from "../../components/NarratedText";
 import TitleLayout from "../../layout/TitleLayout";
 
-export default function Page3 (){
+export default function About (){
     return (
         <div role="main">
             <TitleLayout>
                 <h1>
-                    <NarratedText text="Page 3"/>
+                    <NarratedText text="About"/>
                 </h1>
             </TitleLayout>
         </div>

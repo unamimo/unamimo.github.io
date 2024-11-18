@@ -12,13 +12,13 @@ function App() {
           <NarratedText text="Title"/>
         </h1>
         <div style={{ textAlign: "center"}} role='navigation'>
-          <MyLink to='page1' renderAsButton={true}>
+          <MyLink to='/About' renderAsButton={true}>
             About
           </MyLink>
-          <MyLink to='page2' renderAsButton={true}>
+          <MyLink to='/Config' renderAsButton={true}>
             Config
           </MyLink>
-          <MyLink to='page3' renderAsButton={true}>
+          <MyLink to='/Credits' renderAsButton={true}>
             Credits
           </MyLink>
         </div>

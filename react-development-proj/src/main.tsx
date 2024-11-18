@@ -3,11 +3,11 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './pages/App/App';
-import Page1 from './pages/Page1/Page1';
-import Page3 from './pages/Page3/Page3';
-import Page2 from './pages/Page2/Page2';
 import NotFoundPage from './pages/NotFoundPage';
 import TextToSpeechProvider from './context/TextToSpeechContext';
+import About from './pages/About/About';
+import Config from './pages/Config/Config';
+import Credits from './pages/Credits/Credits';
 
 const router = createBrowserRouter([
   {
@@ -19,16 +19,16 @@ const router = createBrowserRouter([
     errorElement: <NotFoundPage />
   },
   {
-    path: "/page1",
-    element: <Page1 />,
+    path: "/About",
+    element: <About />,
   },
   {
-    path: "/page2",
-    element: <Page2 />,
+    path: "/Config",
+    element: <Config />,
   },
   {
-    path: "/page3", 
-    element: <Page3 />,
+    path: "/Credits", 
+    element: <Credits />,
   }
 ]);
 
