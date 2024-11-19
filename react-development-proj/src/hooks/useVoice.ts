@@ -9,7 +9,6 @@ export function useVoice () {
     
     const voiceText = (text?: string) => {
         isNarratorEnabled ? handlePlay(text) : handleStop();
-        console.log("is narrator enabled in voiceText function?: ",isNarratorEnabled)
     }
 
     return voiceText;
@@ -22,12 +21,10 @@ function handlePlay(text?: string) {
     if (speechSynthesis.speaking) {
         handleStop();
     }
-    console.log("Entered handle play function")
     const utteranceText = new SpeechSynthesisUtterance(text);
     speechSynthesis.speak(utteranceText);
 };
 
 function handleStop() {
-    console.log("Entered stop TTS function")
     speechSynthesis.cancel();
 };
