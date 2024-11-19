@@ -1,6 +1,5 @@
 import './App.css'
 import TitleLayout from '../../layout/TitleLayout'
-import NarratedText from '../../components/NarratedText'
 import MyLink from '../../components/MyLink/MyLink';
 
 function App() {
@@ -10,7 +9,7 @@ function App() {
         {/* Move these in-line styles to a CSS file? Could get messy in the future */}
         <div style={{ maxWidth: "500px" }}>
           <h1 style={{ fontSize: "6.5em", textAlign: "center" }}>
-            <NarratedText text="Accessible menu"/>
+            Accessible menu
           </h1>
         </div>
         <div style={{ textAlign: "center"}} role='navigation'>

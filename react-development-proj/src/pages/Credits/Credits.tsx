@@ -1,5 +1,4 @@
 import MyLink from "../../components/MyLink/MyLink";
-import NarratedText from "../../components/NarratedText";
 import TitleLayout from "../../layout/TitleLayout";
 
 export default function Credits (){
@@ -7,7 +6,7 @@ export default function Credits (){
         <div role="main">
             <TitleLayout>
                 <h1>
-                    <NarratedText text="Credits"/>
+                    Credits
                 </h1>
                 <p>
                     Credits will be added here in the future

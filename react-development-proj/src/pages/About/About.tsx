@@ -1,5 +1,4 @@
 import MyLink from "../../components/MyLink/MyLink";
-import NarratedText from "../../components/NarratedText";
 import TitleLayout from "../../layout/TitleLayout";
 
 export default function About (){
@@ -7,7 +6,7 @@ export default function About (){
         <div role="main">
             <TitleLayout>
                 <h1>
-                    <NarratedText text="About"/>
+                    About
                 </h1>
                 <p>
                     Information about the project will be added here in the future
