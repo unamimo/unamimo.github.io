@@ -1,10 +1,13 @@
 import MyLink from "../../components/MyLink/MyLink";
+import { useTheme } from "../../context/ThemeContext";
 import TitleLayout from "../../layout/TitleLayout";
 import { Navigation, Region } from "../../utils/LandmarkNav";
 
 export default function About (){
+    const { darkTheme } = useTheme();
+    
     return (
-        <div role="main">
+        <div role="main" className={darkTheme ? "dark-theme" : "light-theme"}>
             <TitleLayout>
                 <Region aria-label={"About"}>
                     <h1>

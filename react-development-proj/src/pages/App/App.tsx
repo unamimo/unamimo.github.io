@@ -3,13 +3,12 @@ import TitleLayout from '../../layout/TitleLayout'
 import MyLink from '../../components/MyLink/MyLink';
 import { Navigation, Region } from '../../utils/LandmarkNav';
 import { useTheme } from '../../context/ThemeContext';
-import ToggleTheme from '../../components/ToggleTheme';
 
 function App() {
   const { darkTheme } = useTheme();
   
   return (
-    <div role='main'className={`App ${darkTheme ? "dark-theme" : "light-theme"}`}>
+    <div role='main'className={darkTheme ? "dark-theme" : "light-theme"}>
       <TitleLayout>
         {/* Move these in-line styles to a CSS file? Could get messy in the future */}
         <Region>
@@ -19,7 +18,6 @@ function App() {
           </h1>
         </div>
         </Region>
-        <ToggleTheme/>
         <Navigation style={{ textAlign: "center"}}>
           <MyLink to='/About' renderAsButton={true}>
             About
