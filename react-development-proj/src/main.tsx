@@ -8,6 +8,7 @@ import TextToSpeechProvider from './context/TextToSpeechContext';
 import About from './pages/About/About';
 import Config from './pages/Config/Config';
 import Credits from './pages/Credits/Credits';
+import { ThemeProvider } from './context/ThemeContext';
 
 const router = createBrowserRouter([
   {
@@ -34,8 +35,10 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <TextToSpeechProvider>
-      <RouterProvider router={router}/>
-    </TextToSpeechProvider>
+    <ThemeProvider>
+      <TextToSpeechProvider>
+        <RouterProvider router={router}/>
+      </TextToSpeechProvider>
+    </ThemeProvider>
   </StrictMode>,
 )

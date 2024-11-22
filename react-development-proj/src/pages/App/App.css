@@ -19,6 +19,16 @@ body,html {
   box-sizing: border-box;
 }
 
+.dark-theme {
+  background-color: #333;
+  color: #fff
+}
+
+.light-theme {
+  background-color: #fff;
+  color: #333
+}
+
 /*Add styling to the buttons on the title screen */
 .TitleButtons {
   margin: 30px;
