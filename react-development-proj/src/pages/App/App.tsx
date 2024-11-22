@@ -1,18 +1,21 @@
 import './App.css'
 import TitleLayout from '../../layout/TitleLayout'
 import MyLink from '../../components/MyLink/MyLink';
+import { Navigation, Region } from '../../utils/LandmarkNav';
 
 function App() {
   return (
     <div role='main'>
       <TitleLayout>
         {/* Move these in-line styles to a CSS file? Could get messy in the future */}
+        <Region>
         <div style={{ maxWidth: "500px" }}>
           <h1 style={{ fontSize: "6.5em", textAlign: "center" }}>
             Accessible menu
           </h1>
         </div>
-        <div style={{ textAlign: "center"}} role='navigation'>
+        </Region>
+        <Navigation style={{ textAlign: "center"}}>
           <MyLink to='/About' renderAsButton={true}>
             About
           </MyLink>
@@ -22,7 +25,7 @@ function App() {
           <MyLink to='/Credits' renderAsButton={true}>
             Credits
           </MyLink>
-        </div>
+        </Navigation>
       </TitleLayout>
     </div>
   );
