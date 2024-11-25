@@ -3,6 +3,8 @@ import TitleLayout from '../../layout/TitleLayout'
 import MyLink from '../../components/MyLink/MyLink';
 import { Navigation, Region } from '../../utils/LandmarkNav';
 import { useTheme } from '../../context/ThemeContext';
+import "../../themes/darkTheme.css";  // has global scope, turn into module to make it local
+import "../../themes/lightTheme.css";
 
 function App() {
   const { darkTheme } = useTheme();
