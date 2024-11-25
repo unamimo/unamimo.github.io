@@ -5,6 +5,7 @@ import ToggleTheme from "../../components/ToggleTheme";
 import { useTheme } from "../../context/ThemeContext";
 import TitleLayout from "../../layout/TitleLayout";
 import { Navigation, Region } from "../../utils/LandmarkNav";
+import ToggleLanguage from "../../components/ToggleLanguage";
 
 export default function Config (){
     const { darkTheme } = useTheme();
@@ -23,6 +24,7 @@ export default function Config (){
                 </Region>
                 <TextToSpeechToggle/>
                 <ToggleTheme/>
+                <ToggleLanguage/>
                 <br/>
                 <Navigation>
                     <MyLink renderAsButton={true} to="/">{t("general.home")}</MyLink>
