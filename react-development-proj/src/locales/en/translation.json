@@ -34,6 +34,12 @@
       },
       "ToggleTheme": {
         "toggle_dark_theme": "Toggle dark theme"
+      },
+      "ToggleLanguage": {
+        "description": "Change language",
+        "english": "English",
+        "spanish": "Spanish",
+        "japanese": "Japanese"
       }
     }
     

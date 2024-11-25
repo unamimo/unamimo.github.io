@@ -34,6 +34,12 @@
       },
       "ToggleTheme": {
         "toggle_dark_theme": "ダークテーマを切り替える"
+      },
+      "ToggleLanguage": {
+        "description": "言語を変更する",
+        "english": "英語",
+        "spanish": "スペイン語",
+        "japanese": "日本語"
       }
     }
     

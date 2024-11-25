@@ -7,16 +7,16 @@ export default function ToggleLanguage() {
     return(
         <div>
             <p>
-                Change language
+                {t("components.ToggleLanguage.description")}
             </p>
             <button onClick={ () => i18n.changeLanguage('en')}>
-                English
+                {t("components.ToggleLanguage.english")}
             </button>
             <button onClick={ () => i18n.changeLanguage('es')}>
-                Spanish
+                {t("components.ToggleLanguage.spanish")}
             </button>
             <button onClick={ () => i18n.changeLanguage('jp')}>
-                Japanese
+                {t("components.ToggleLanguage.japanese")}
             </button>
         </div>
     )

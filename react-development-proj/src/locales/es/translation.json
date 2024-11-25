@@ -31,6 +31,12 @@
         },
         "ToggleTheme": {
           "toggle_dark_theme": "Alternar tema oscuro"
+        },
+        "ToggleLanguage": {
+          "description": "Cambiar idioma",
+          "english": "Inglés",
+          "spanish": "Español",
+          "japanese": "Japonés"
         }
       }
     }
