@@ -3,13 +3,16 @@
 // also does not save state between page refresh
 
 import { useTheme } from "../context/ThemeContext";
+import { useTranslation } from 'react-i18next';
+
 
 export default function ToggleTheme () {
+    const { t } = useTranslation();
     const { toggleTheme } = useTheme();
 
     return(
         <button onClick={() => toggleTheme()}>
-            Toggle dark theme
+            {t("components.ToggleTheme.toggle_dark_theme")}
         </button>
     )
 }

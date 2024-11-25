@@ -1,0 +1,47 @@
+{
+  "translation": {
+
+    "general": {
+      "about": "概要",
+      "config": "設定",
+      "credits": "クレジット",
+      "home": "ホーム"
+    },
+    
+    "pages": {
+      "home": {
+        "title": "アクセシブルメニュー"
+      },
+      "about": {
+        "description": "このプロジェクトに関する情報は今後追加されます"
+      },
+      "config": {
+        "description": "さまざまな設定オプションがここに提供されます"
+      },
+      "credits": {
+        "description": "クレジットは今後ここに追加されます"
+      },
+      "not_found": {
+        "title": "404 見つかりません",
+        "description": "ホームページに戻る"
+      }
+    },
+
+    "components": {
+      "TextToSpeechToggle": {
+        "enable_narrator": "ナレーターを有効にする",
+        "disable_narrator": "ナレーターを無効にする"
+      },
+      "ToggleTheme": {
+        "toggle_dark_theme": "ダークテーマを切り替える"
+      },
+      "ToggleLanguage": {
+        "description": "言語を変更する",
+        "english": "英語",
+        "spanish": "スペイン語",
+        "japanese": "日本語"
+      }
+    }
+    
+  }
+}

@@ -3,12 +3,15 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './pages/App/App';
-import NotFoundPage from './pages/NotFoundPage';
+import NotFoundPage from './pages/NotFound';
 import TextToSpeechProvider from './context/TextToSpeechContext';
 import About from './pages/About/About';
 import Config from './pages/Config/Config';
 import Credits from './pages/Credits/Credits';
 import { ThemeProvider } from './context/ThemeContext';
+
+// import i18n (needs to be bundled ;))
+import './i18n';
 
 const router = createBrowserRouter([
   {

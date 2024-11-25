@@ -1,9 +1,11 @@
+import { useTranslation } from "react-i18next";
 import MyLink from "../../components/MyLink/MyLink";
 import { useTheme } from "../../context/ThemeContext";
 import TitleLayout from "../../layout/TitleLayout";
 import { Navigation, Region } from "../../utils/LandmarkNav";
 
 export default function Credits (){
+    const { t } = useTranslation();
     const { darkTheme } = useTheme();
     
     return (
@@ -11,16 +13,16 @@ export default function Credits (){
             <TitleLayout>
                 <Region aria-label="Credits">
                     <h1>
-                        Credits
+                        {t("general.credits")}
                     </h1>
                 </Region>
                 <Region aria-labelledby="Credits">
                     <p>
-                        Credits will be added here in the future
+                        {t("pages.credits.description")}
                     </p>
                 </Region>
                 <Navigation>
-                    <MyLink renderAsButton={true} to="/">Home</MyLink>
+                    <MyLink renderAsButton={true} to="/">{t("general.home")}</MyLink>
                 </Navigation>
             </TitleLayout>
         </div>
