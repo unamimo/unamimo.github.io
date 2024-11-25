@@ -6,16 +6,16 @@ export default function ToggleLanguage() {
 
     return(
         <div>
-            <p>
+            <p aria-label="change-language">
                 {t("components.ToggleLanguage.description")}
             </p>
-            <button onClick={ () => i18n.changeLanguage('en')}>
+            <button onClick={ () => i18n.changeLanguage('en')} aria-labelledby="change-language">
                 {t("components.ToggleLanguage.english")}
             </button>
-            <button onClick={ () => i18n.changeLanguage('es')}>
+            <button onClick={ () => i18n.changeLanguage('es')} aria-labelledby="change-language">
                 {t("components.ToggleLanguage.spanish")}
             </button>
-            <button onClick={ () => i18n.changeLanguage('jp')}>
+            <button onClick={ () => i18n.changeLanguage('jp')} aria-labelledby="change-language">
                 {t("components.ToggleLanguage.japanese")}
             </button>
         </div>
