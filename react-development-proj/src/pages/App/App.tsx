@@ -2,10 +2,15 @@ import './App.css'
 import TitleLayout from '../../layout/TitleLayout'
 import MyLink from '../../components/MyLink/MyLink';
 import { Navigation, Region } from '../../utils/LandmarkNav';
+import { useTheme } from '../../context/ThemeContext';
+import "../../themes/darkTheme.css";  // has global scope, turn into module to make it local
+import "../../themes/lightTheme.css";
 
 function App() {
+  const { darkTheme } = useTheme();
+  
   return (
-    <div role='main'>
+    <div role='main'className={darkTheme ? "dark-theme" : "light-theme"}>
       <TitleLayout>
         {/* Move these in-line styles to a CSS file? Could get messy in the future */}
         <Region>
