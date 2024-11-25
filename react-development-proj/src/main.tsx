@@ -10,6 +10,9 @@ import Config from './pages/Config/Config';
 import Credits from './pages/Credits/Credits';
 import { ThemeProvider } from './context/ThemeContext';
 
+// import i18n (needs to be bundled ;))
+import './i18n';
+
 const router = createBrowserRouter([
   {
     path: "/",          // route path
