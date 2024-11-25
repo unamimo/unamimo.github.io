@@ -4,7 +4,7 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-import enJSON from '../src/locales/jp/translation.json'
+import enJSON from '../src/locales/en/translation.json'
 import jpJSON from '../src/locales/jp/translation.json'
 
 import Backend from 'i18next-http-backend';

@@ -2,38 +2,38 @@
   "translation": {
 
     "general": {
-      "about": "About",
-      "config": "Config",
-      "credits": "Credits",
-      "home": "Home"
+      "about": "概要",
+      "config": "設定",
+      "credits": "クレジット",
+      "home": "ホーム"
     },
-
+    
     "pages": {
       "home": {
-        "title": "Accessible menu"
+        "title": "アクセシブルメニュー"
       },
       "about": {
-        "description": "Information about the project will be added here in the future"
+        "description": "このプロジェクトに関する情報は今後追加されます"
       },
       "config": {
-        "description": "Different configuration options are provided here"
+        "description": "さまざまな設定オプションがここに提供されます"
       },
       "credits": {
-        "description": "Credits will be added here in the future"
+        "description": "クレジットは今後ここに追加されます"
       },
       "not_found": {
-        "title": "404 Not Found",
-        "description": "Go to the home page"
+        "title": "404 見つかりません",
+        "description": "ホームページに戻る"
       }
     },
 
     "components": {
       "TextToSpeechToggle": {
-        "enable_narrator": "Enable narrator",
-        "disable_narrator": "Disable narrator"
+        "enable_narrator": "ナレーターを有効にする",
+        "disable_narrator": "ナレーターを無効にする"
       },
       "ToggleTheme": {
-        "toggle_dark_theme": "Toggle dark theme"
+        "toggle_dark_theme": "ダークテーマを切り替える"
       }
     }
     
