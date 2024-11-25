@@ -1,5 +1,41 @@
 {
   "translation": {
-    "specificKey": "Translated Value"
+
+    "general": {
+      "about": "About",
+      "config": "Config",
+      "credits": "Credits",
+      "home": "Home"
+    },
+
+    "pages": {
+      "home": {
+        "title": "Accessible menu"
+      },
+      "about": {
+        "description": "Information about the project will be added here in the future"
+      },
+      "config": {
+        "description": "Different configuration options are provided here"
+      },
+      "credits": {
+        "description": "Credits will be added here in the future"
+      },
+      "not_found": {
+        "title": "404 Not Found",
+        "description": "Go to the home page"
+      }
+    },
+
+    "components": {
+      "TextToSpeechToggle": {
+        "enable_narrator": "Enable narrator",
+        "disable_narrator": "Disable narrator"
+      },
+      "ToggleTheme": {
+        "toggle_dark_theme": "Toggle dark theme"
+      }
+    }
+    
   }
 }

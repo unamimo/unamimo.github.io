@@ -5,9 +5,11 @@ import { Navigation, Region } from '../../utils/LandmarkNav';
 import { useTheme } from '../../context/ThemeContext';
 import "../../themes/darkTheme.css";  // has global scope, turn into module to make it local
 import "../../themes/lightTheme.css";
+import { useTranslation } from 'react-i18next';
 
 function App() {
   const { darkTheme } = useTheme();
+  const { t } = useTranslation();
   
   return (
     <div role='main'className={darkTheme ? "dark-theme" : "light-theme"}>
@@ -16,19 +18,19 @@ function App() {
         <Region>
         <div style={{ maxWidth: "500px" }}>
           <h1 style={{ fontSize: "6.5em", textAlign: "center" }}>
-            Accessible menu
+            {t("pages.home.title")}
           </h1>
         </div>
         </Region>
         <Navigation style={{ textAlign: "center"}}>
           <MyLink to='/About' renderAsButton={true}>
-            About
+            {t("general.about")}
           </MyLink>
           <MyLink to='/Config' renderAsButton={true}>
-            Config
+            {t("general.config")}
           </MyLink>
           <MyLink to='/Credits' renderAsButton={true}>
-            Credits
+            {t("general.credits")}
           </MyLink>
         </Navigation>
       </TitleLayout>

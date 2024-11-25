@@ -1,12 +1,12 @@
 import MyLink from "../components/MyLink/MyLink";
 
-export default function NotFoundPage () {
+export default function NotFound () {
     return(
         <>
-            <div>404 Not Found</div>
-            <div>
+            <h1>404 Not Found</h1>
+            <p>
                 <MyLink to="/">Go to the home page</MyLink>
-            </div>
+            </p>
         </>
     )
 }

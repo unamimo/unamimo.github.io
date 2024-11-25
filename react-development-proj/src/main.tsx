@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './pages/App/App';
-import NotFoundPage from './pages/NotFoundPage';
+import NotFoundPage from './pages/NotFound';
 import TextToSpeechProvider from './context/TextToSpeechContext';
 import About from './pages/About/About';
 import Config from './pages/Config/Config';
