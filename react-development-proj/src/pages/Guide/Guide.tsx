@@ -20,28 +20,28 @@ export default function Guide (){
                     <p>
                         {t("pages.guide.description")}
                     </p>
-                    <p>Narrator</p>
+                    <p>{t("pages.guide.narrator.title")}</p>
                     <ul>
-                        <li>The narrator is toggled through the config page</li>
-                        <li>The narrator will voice buttons when they have focus (through 'Tab' or mouse click)</li>
-                        <li>The narrator only works for English</li>
-                        <li>The state of the narrator will not persist through page refresh</li>
+                        <li>{t("pages.guide.narrator.toggle_location")}</li>
+                        <li>{t("pages.guide.narrator.controls")}</li>
+                        <li>{t("pages.guide.narrator.english_only")}</li>
+                        <li>{t("pages.guide.narrator.state")}</li>
                     </ul>
-                    <p>Language changer</p>
+                    <p>{t("pages.guide.language_switcher.title")}</p>
                     <ul>
-                        <li>Clicking on the button of a language, will change it to that language instantly</li>
-                        <li>The state of the language will persist through page refresh</li>
+                        <li>{t("pages.guide.language_switcher.buttons")}</li>
+                        <li>{t("pages.guide.language_switcher.state")}</li>
                     </ul>
-                    <p>Themes</p>
+                    <p>{t("pages.guide.themes.title")}</p>
                     <ul>
-                        <li>There are currently two themes, dark and light</li>
-                        <li>The state of the theme will not persist through page refresh</li>
-                        <li>Theming is a work in progress, some elements may not match the current theme</li>
+                        <li>{t("pages.guide.themes.explanation")}</li>
+                        <li>{t("pages.guide.themes.state")}</li>
+                        <li>{t("pages.guide.themes.wip")}</li>
                     </ul>
-                    <p>Keyboard navigation</p>
+                    <p>{t("pages.guide.keyboard_nav.title")}</p>
                     <ul>
-                        <li>Use the 'Tab' button to navigate between interactive elements</li>
-                        <li>Use the 'F6' button to navigate between landmarks. Landmarks are sections of the page that seperate content</li>
+                        <li>{t("pages.guide.keyboard_nav.tab")}</li>
+                        <li>{t("pages.guide.keyboard_nav.f6")}</li>
                     </ul>
                 </Region>
                 <Navigation>

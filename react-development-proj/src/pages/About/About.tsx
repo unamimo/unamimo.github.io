@@ -21,18 +21,18 @@ export default function About (){
                         {/* Remove later */}
                         {t("pages.about.description")}
                     </p>
-                    <p>Features</p>
+                    <p>{t("pages.about.features.title")}</p>
                     <ul>
-                        <li>Landmark navigation</li>
-                        <li>Custom made screen reader</li>
-                        <li>Language switcher</li>
-                        <li>Dark theme</li>
+                        <li>{t("pages.about.features.landmark_navigation")}</li>
+                        <li>{t("pages.about.features.screen_reader")}</li>
+                        <li>{t("pages.about.features.language_switcher")}</li>
+                        <li>{t("pages.about.features.dark_theme")}</li>
                     </ul>
-                    <p>Accessibility</p>
+                    <p>{t("pages.about.accessibility.title")}</p>
                     <ul>
-                        <li>0 issues when testing with AXE (accessibility) tools, including best practices</li>
-                        <li>Compaitable with screen readers (NVDA)</li>
-                        <li>Compliance with WCAG 2.1</li>
+                        <li>{t("pages.about.accessibility.axe")}</li>
+                        <li>{t("pages.about.accessibility.compatiable_screen_reader")}</li>
+                        <li>{t("pages.about.accessibility.compliance")}</li>
                     </ul>
                 </Region>
                 <Navigation>
