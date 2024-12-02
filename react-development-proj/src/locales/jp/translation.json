@@ -1,47 +1,79 @@
 {
   "translation": {
-
     "general": {
       "about": "概要",
       "config": "設定",
-      "credits": "クレジット",
+      "guide": "ガイド",
       "home": "ホーム"
     },
-    
     "pages": {
       "home": {
         "title": "アクセシブルメニュー"
       },
       "about": {
-        "description": "このプロジェクトに関する情報は今後追加されます"
+        "description": "プロジェクトについての情報",
+        "features": {
+          "title": "機能",
+          "landmark_navigation": "ランドマークナビゲーション",
+          "screen_reader": "カスタムスクリーンリーダー",
+          "language_switcher": "言語切替",
+          "dark_theme": "ダークテーマ"
+        },
+        "accessibility": {
+          "title": "アクセシビリティ",
+          "axe": "AXE（アクセシビリティ）ツールでのテスト時に問題なし（ベストプラクティスを含む）",
+          "compatiable_screen_reader": "スクリーンリーダー（NVDA）と互換性あり",
+          "compliance": "WCAG 2.1に準拠"
+        }
       },
       "config": {
-        "description": "さまざまな設定オプションがここに提供されます"
+        "description": "ここでは、さまざまな設定オプションが提供されています"
       },
-      "credits": {
-        "description": "クレジットは今後ここに追加されます"
+      "guide": {
+        "description": "現在のウェブサイトで提供されている機能のガイド。",
+        "narrator": {
+          "title": "ナレーター",
+          "toggle_location": "ナレーターは設定ページで切り替え可能です。",
+          "controls": "ナレーターは、フォーカス（'Tab' またはマウスクリック）されたボタンを読み上げます。",
+          "english_only": "ナレーターは現在、英語のみ対応しています。",
+          "state": "ナレーターの状態はページ更新後に保持されません。"
+        },
+        "language_switcher": {
+          "title": "言語切替",
+          "buttons": "言語ボタンをクリックすると、即座にその言語に切り替わります。",
+          "state": "言語の状態はページ更新後も保持されます。"
+        },
+        "themes": {
+          "title": "テーマ",
+          "explanation": "現在、ダークテーマとライトテーマの2つがあります。",
+          "state": "テーマの状態はページ更新後に保持されません。",
+          "wip": "テーマの設計は進行中であり、一部の要素が現在のテーマと一致しない場合があります。"
+        },
+        "keyboard_nav": {
+          "title": "キーボードナビゲーション",
+          "tab": "'Tab'キーを使用してインタラクティブ要素間を移動します。",
+          "f6": "'F6'キーを使用してランドマーク間を移動します。ランドマークはページ内のコンテンツを区切るセクションです。"
+        }
       },
       "not_found": {
         "title": "404 見つかりません",
         "description": "ホームページに戻る"
       }
     },
-
     "components": {
       "TextToSpeechToggle": {
         "enable_narrator": "ナレーターを有効にする",
         "disable_narrator": "ナレーターを無効にする"
       },
       "ToggleTheme": {
-        "toggle_dark_theme": "ダークテーマを切り替える"
+        "toggle_dark_theme": "ダークテーマを切り替え"
       },
       "ToggleLanguage": {
-        "description": "言語を変更する",
+        "description": "言語を変更",
         "english": "英語",
         "spanish": "スペイン語",
         "japanese": "日本語"
       }
     }
-    
   }
 }

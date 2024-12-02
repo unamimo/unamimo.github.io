@@ -1,44 +1,79 @@
 {
-    "translation": {
-      "general": {
-        "about": "Acerca de",
-        "config": "Configuración",
-        "credits": "Créditos",
-        "home": "Inicio"
+  "translation": {
+    "general": {
+      "about": "Acerca de",
+      "config": "Configuración",
+      "guide": "Guía",
+      "home": "Inicio"
+    },
+    "pages": {
+      "home": {
+        "title": "Menú accesible"
       },
-      "pages": {
-        "home": {
-          "title": "Menú accesible"
+      "about": {
+        "description": "Información sobre el proyecto",
+        "features": {
+          "title": "Características",
+          "landmark_navigation": "Navegación por hitos",
+          "screen_reader": "Lector de pantalla personalizado",
+          "language_switcher": "Cambiador de idioma",
+          "dark_theme": "Tema oscuro"
         },
-        "about": {
-          "description": "La información sobre el proyecto se añadirá aquí en el futuro"
-        },
-        "config": {
-          "description": "Se proporcionan diferentes opciones de configuración aquí"
-        },
-        "credits": {
-          "description": "Los créditos se añadirán aquí en el futuro"
-        },
-        "not_found": {
-          "title": "404 No encontrado",
-          "description": "Ir a la página de inicio"
+        "accessibility": {
+          "title": "Accesibilidad",
+          "axe": "0 problemas al probar con herramientas AXE (accesibilidad), incluidas las mejores prácticas",
+          "compatiable_screen_reader": "Compatible con lectores de pantalla (NVDA)",
+          "compliance": "Cumplimiento con WCAG 2.1"
         }
       },
-      "components": {
-        "TextToSpeechToggle": {
-          "enable_narrator": "Activar narrador",
-          "disable_narrator": "Desactivar narrador"
+      "config": {
+        "description": "Aquí se proporcionan diferentes opciones de configuración"
+      },
+      "guide": {
+        "description": "Una guía de las características que el sitio web ofrece actualmente.",
+        "narrator": {
+          "title": "Narrador",
+          "toggle_location": "El narrador se activa/desactiva desde la página de configuración.",
+          "controls": "El narrador enunciará los botones cuando tengan el foco (a través de 'Tab' o clic del ratón).",
+          "english_only": "El narrador actualmente solo funciona en inglés.",
+          "state": "El estado del narrador no persistirá al refrescar la página."
         },
-        "ToggleTheme": {
-          "toggle_dark_theme": "Alternar tema oscuro"
+        "language_switcher": {
+          "title": "Cambiador de idioma",
+          "buttons": "Hacer clic en el botón de un idioma lo cambiará a ese idioma instantáneamente.",
+          "state": "El estado del idioma persistirá al refrescar la página."
         },
-        "ToggleLanguage": {
-          "description": "Cambiar idioma",
-          "english": "Inglés",
-          "spanish": "Español",
-          "japanese": "Japonés"
+        "themes": {
+          "title": "Temas",
+          "explanation": "Actualmente hay dos temas, oscuro y claro.",
+          "state": "El estado del tema no persistirá al refrescar la página.",
+          "wip": "El diseño del tema está en progreso, algunos elementos pueden no coincidir con el tema actual."
+        },
+        "keyboard_nav": {
+          "title": "Navegación con teclado",
+          "tab": "Usa el botón 'Tab' para navegar entre elementos interactivos.",
+          "f6": "Usa el botón 'F6' para navegar entre hitos. Los hitos son secciones de la página que separan el contenido."
         }
+      },
+      "not_found": {
+        "title": "404 No Encontrado",
+        "description": "Ir a la página de inicio"
+      }
+    },
+    "components": {
+      "TextToSpeechToggle": {
+        "enable_narrator": "Activar narrador",
+        "disable_narrator": "Desactivar narrador"
+      },
+      "ToggleTheme": {
+        "toggle_dark_theme": "Cambiar tema oscuro"
+      },
+      "ToggleLanguage": {
+        "description": "Cambiar idioma",
+        "english": "Inglés",
+        "spanish": "Español",
+        "japanese": "Japonés"
       }
     }
   }
-  
+}

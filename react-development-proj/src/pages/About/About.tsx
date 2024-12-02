@@ -20,6 +20,19 @@ export default function About (){
                     <p>
                         {t("pages.about.description")}
                     </p>
+                    <p>{t("pages.about.features.title")}</p>
+                    <ul>
+                        <li>{t("pages.about.features.landmark_navigation")}</li>
+                        <li>{t("pages.about.features.screen_reader")}</li>
+                        <li>{t("pages.about.features.language_switcher")}</li>
+                        <li>{t("pages.about.features.dark_theme")}</li>
+                    </ul>
+                    <p>{t("pages.about.accessibility.title")}</p>
+                    <ul>
+                        <li>{t("pages.about.accessibility.axe")}</li>
+                        <li>{t("pages.about.accessibility.compatiable_screen_reader")}</li>
+                        <li>{t("pages.about.accessibility.compliance")}</li>
+                    </ul>
                 </Region>
                 <Navigation>
                     <MyLink renderAsButton={true} to="/">{t("general.home")}</MyLink>

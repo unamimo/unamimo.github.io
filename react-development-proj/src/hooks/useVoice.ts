@@ -14,7 +14,9 @@ export function useVoice () {
     return voiceText;
 };
 
-function handlePlay(text?: string) {
+// use function on its own for inital "narrator enabled" voice
+// this is due to confusion between components with the 'isNarratorEnabled' state
+export function handlePlay(text?: string) {
     // this if statement makes the narrator interupt itself if it needs to say new text
     // remove to have the narrator wait before voicing new text
     // this will need to be removed for pages which want to voice all the text 

@@ -29,8 +29,8 @@ function App() {
           <MyLink to='/Config' renderAsButton={true}>
             {t("general.config")}
           </MyLink>
-          <MyLink to='/Credits' renderAsButton={true}>
-            {t("general.credits")}
+          <MyLink to='/Guide' renderAsButton={true}>
+            {t("general.guide")}
           </MyLink>
         </Navigation>
       </TitleLayout>

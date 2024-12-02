@@ -7,11 +7,11 @@ import NotFoundPage from './pages/NotFound';
 import TextToSpeechProvider from './context/TextToSpeechContext';
 import About from './pages/About/About';
 import Config from './pages/Config/Config';
-import Credits from './pages/Credits/Credits';
 import { ThemeProvider } from './context/ThemeContext';
 
 // import i18n (needs to be bundled ;))
 import './i18n';
+import Guide from './pages/Guide/Guide';
 
 const router = createBrowserRouter([
   {
@@ -31,8 +31,8 @@ const router = createBrowserRouter([
     element: <Config />,
   },
   {
-    path: "/Credits", 
-    element: <Credits />,
+    path: "/Guide", 
+    element: <Guide />,
   }
 ]);
 

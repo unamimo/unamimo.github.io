@@ -4,7 +4,7 @@
     "general": {
       "about": "About",
       "config": "Config",
-      "credits": "Credits",
+      "guide": "Guide",
       "home": "Home"
     },
 
@@ -13,13 +13,49 @@
         "title": "Accessible menu"
       },
       "about": {
-        "description": "Information about the project will be added here in the future"
+        "description": "Information about the project",
+        "features": {
+          "title": "Features",
+          "landmark_navigation": "Landmark navigation",
+          "screen_reader": "Custom made screen reader",
+          "language_switcher": "Language switcher",
+          "dark_theme": "Dark theme"
+        },
+        "accessibility": {
+          "title": "Accessibility",
+          "axe": "0 issues when testing with AXE (accessibility) tools, including best practices",
+          "compatiable_screen_reader": "Compaitable with screen readers (NVDA)",
+          "compliance": "Compliance with WCAG 2.1"
+        }
       },
       "config": {
         "description": "Different configuration options are provided here"
       },
-      "credits": {
-        "description": "Credits will be added here in the future"
+      "guide": {
+        "description": "A guide to the features that the website currently offers.",
+        "narrator": {
+          "title": "Narrator",
+          "toggle_location": "The narrator is toggled through the config page.",
+          "controls": "The narrator will voice buttons when they have focus (through 'Tab' or mouse click).",
+          "english_only": "The narrator currently only works for English.",
+          "state": "The state of the narrator will not persist through page refresh."
+        },
+        "language_switcher": {
+          "title": "Language switcher",
+          "buttons": "Clicking on the button of a language, will change it to that language instantly.",
+          "state": "The state of the language will persist through page refresh."
+        },
+        "themes": {
+          "title": "Themes",
+          "explanation":"There are currently two themes, dark and light.",
+          "state": "The state of the theme will not persist through page refresh.",
+          "wip": "Theming is a work in progress, some elements may not match the current theme."
+        },
+        "keyboard_nav": {
+          "title": "Keyboard navigation",
+          "tab": "Use the 'Tab' button to navigate between interactive elements.",
+          "f6": "Use the 'F6' button to navigate between landmarks. Landmarks are sections of the page that seperate content."
+        }
       },
       "not_found": {
         "title": "404 Not Found",
