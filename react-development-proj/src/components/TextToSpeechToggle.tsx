@@ -1,5 +1,5 @@
 import { useTextToSpeech } from "../context/TextToSpeechContext";
-import { useVoice } from "../hooks/useVoice";
+import { handlePlay, useVoice } from "../hooks/useVoice";
 import { useTranslation } from 'react-i18next';
 
 // this component is used for turning text to speech on and off
@@ -14,7 +14,7 @@ export default function TextToSpeechToggle() {
             {isNarratorEnabled ?  (
                 <button onClick={() => turnOff()} onFocus={() => voiceText(t("components.TextToSpeechToggle.disable_narrator"))}>{t("components.TextToSpeechToggle.disable_narrator")}</button>
             ) : (
-                <button onClick={() => turnOn()}>{t("components.TextToSpeechToggle.enable_narrator")}</button>
+                <button onClick={() => {turnOn(); handlePlay("Narrator enabled")}}>{t("components.TextToSpeechToggle.enable_narrator")}</button>
             )
             }
         </>
