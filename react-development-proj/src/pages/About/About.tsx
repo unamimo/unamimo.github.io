@@ -18,7 +18,6 @@ export default function About (){
                 </Region>
                 <Region aria-labelledby={"About"}>
                     <p>
-                        {/* Remove later */}
                         {t("pages.about.description")}
                     </p>
                     <p>{t("pages.about.features.title")}</p>
