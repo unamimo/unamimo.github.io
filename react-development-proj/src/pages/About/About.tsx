@@ -30,9 +30,9 @@ export default function About (){
                     </ul>
                     <p>Accessibility</p>
                     <ul>
-                        <li>0 issues when testing with AXE (accessibility) tools</li>
+                        <li>0 issues when testing with AXE (accessibility) tools, including best practices</li>
                         <li>Compaitable with screen readers (NVDA)</li>
-                        <li>Compliance with WCAG 2</li>
+                        <li>Compliance with WCAG 2.1</li>
                     </ul>
                 </Region>
                 <Navigation>
