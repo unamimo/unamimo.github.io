@@ -11,12 +11,12 @@ export default function About (){
     return (
         <div role="main" className={darkTheme ? "dark-theme" : "light-theme"}>
             <TitleLayout>
-                <Region aria-label={"About"}>
+                <Region ariaLabel={"About"}>
                     <h1>
                         {t("general.about")}
                     </h1>    
                 </Region>
-                <Region aria-labelledby={"About"}>
+                <Region ariaLabel={"About description"}>
                     <p>
                         {t("pages.about.description")}
                     </p>
@@ -34,7 +34,7 @@ export default function About (){
                         <li>{t("pages.about.accessibility.compliance")}</li>
                     </ul>
                 </Region>
-                <Navigation>
+                <Navigation ariaLabel="about-go-home">
                     <MyLink renderAsButton={true} to="/">{t("general.home")}</MyLink>
                 </Navigation>
             </TitleLayout>

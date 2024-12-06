@@ -14,19 +14,19 @@ export default function Config (){
     return (
         <div role="main" className={darkTheme ? "dark-theme" : "light-theme"}>
             <TitleLayout>
-                <Region aria-label="Config">
+                <Region ariaLabel="Config">
                     <h1>
                         {t("general.config")}
                     </h1>
                 </Region>
-                <Region aria-labelledby="Config">
+                <Region ariaLabel="Config description">
                     <p>{t("pages.config.description")}</p>
                 </Region>
                 <TextToSpeechToggle/>
                 <ToggleTheme/>
                 <ToggleLanguage/>
                 <br/>
-                <Navigation>
+                <Navigation ariaLabel="config-go-home">
                     <MyLink renderAsButton={true} to="/">{t("general.home")}</MyLink>
                 </Navigation>
             </TitleLayout>

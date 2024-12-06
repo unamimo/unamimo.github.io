@@ -11,12 +11,12 @@ export default function Guide (){
     return (
         <div role="main"  className={darkTheme ? "dark-theme" : "light-theme"}>
             <TitleLayout>
-                <Region aria-label="Guide">
+                <Region ariaLabel="Guide">
                     <h1>
                         {t("general.guide")}
                     </h1>
                 </Region>
-                <Region aria-labelledby="Guide">
+                <Region ariaLabel="Guide description">
                     <p>
                         {t("pages.guide.description")}
                     </p>
@@ -44,7 +44,7 @@ export default function Guide (){
                         <li>{t("pages.guide.keyboard_nav.f6")}</li>
                     </ul>
                 </Region>
-                <Navigation>
+                <Navigation ariaLabel="guide-go-home">
                     <MyLink renderAsButton={true} to="/">{t("general.home")}</MyLink>
                 </Navigation>
             </TitleLayout>
