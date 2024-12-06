@@ -53,7 +53,8 @@
           "title": "Navegación con teclado",
           "tab": "Usa el botón 'Tab' para navegar entre elementos interactivos.",
           "f6": "Usa el botón 'F6' para navegar entre hitos. Los hitos son secciones de la página que separan el contenido."
-        }
+        },
+        "page_content_landmark":  "$t(description), $t(narrator.title)"
       },
       "not_found": {
         "title": "404 No Encontrado",

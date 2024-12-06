@@ -55,7 +55,10 @@
           "title": "Keyboard navigation",
           "tab": "Use the 'Tab' button to navigate between interactive elements.",
           "f6": "Use the 'F6' button to navigate between landmarks. Landmarks are sections of the page that seperate content."
-        }
+        },
+        "page_content_landmark":  "$t(pages.guide.description)",
+        "landmark_narrator": "$t(pages.guide.narrator.title), $t(pages.guide.narrator.toggle_location) $t(pages.guide.narrator.controls) $t(pages.guide.narrator.english_only) $t(pages.guide.narrator.state)",
+        "landmark_language_switcher": "$t(pages.guide.language_switcher.title), $t(pages.guide.language_switcher.buttons) $t(pages.guide.language_switcher.state)"
       },
       "not_found": {
         "title": "404 Not Found",
