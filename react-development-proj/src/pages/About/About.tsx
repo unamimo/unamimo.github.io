@@ -40,7 +40,7 @@ export default function About (){
                         </ul>
                     </Region>
                 </div>
-                <Navigation ariaLabel="about-go-home">
+                <Navigation ariaLabel="general.landmark_navigation">
                     <MyLink renderAsButton={true} to="/">{t("general.home")}</MyLink>
                 </Navigation>
             </TitleLayout>

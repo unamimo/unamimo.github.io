@@ -18,9 +18,16 @@ export function Navigation({
 }: LandmarkNavProps) {
     let ref = useRef<HTMLElement | null>(null);
     let {landmarkProps} = useLandmark({role: 'navigation', "aria-label": ariaLabel}, ref);
-    //const { t } = useTranslation();
+    const { t } = useTranslation();
+    const voiceText = useVoice();
 
-    //console.log(ariaLabel);
+        // this function was generated using AI (ChatGPT)
+    // this function stops the region label being used for child elements in the region, such as buttons
+    const handleNavigationFocus = (e: React.FocusEvent<HTMLDivElement>) => {
+        if (e.target === ref.current) {
+            voiceText(t(ariaLabel));
+        }
+    };
 
     return (
         <nav 
@@ -30,6 +37,7 @@ export function Navigation({
         aria-label={ariaLabel}
         style={style}
         //onFocus={() => voiceText(ariaLabel)}
+        onFocus={handleNavigationFocus}
         >
         {children}
                 {/* {console.log(props.children.props.children.type)}

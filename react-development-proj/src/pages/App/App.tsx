@@ -22,7 +22,7 @@ function App() {
           </h1>
         </div>
         </Region>
-        <Navigation style={{ textAlign: "center"}} ariaLabel="website-navigation">
+        <Navigation style={{ textAlign: "center"}} ariaLabel="general.landmark_navigation">
           <MyLink to='/About' renderAsButton={true}>
             {t("general.about")}
           </MyLink>

@@ -4,7 +4,8 @@
       "about": "Acerca de",
       "config": "Configuración",
       "guide": "Guía",
-      "home": "Inicio"
+      "home": "Inicio",
+      "landmark_navigation": "Navegación"
     },
     "pages": {
       "home": {

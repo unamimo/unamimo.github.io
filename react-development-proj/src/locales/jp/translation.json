@@ -4,7 +4,8 @@
       "about": "概要",
       "config": "設定",
       "guide": "ガイド",
-      "home": "ホーム"
+      "home": "ホーム",
+      "landmark_navigation": "ナビゲーション"
     },
     "pages": {
       "home": {

@@ -36,7 +36,7 @@ export default function Config (){
                     </Region>
                     <br/>
                 </div>
-                <Navigation ariaLabel="config-go-home">
+                <Navigation ariaLabel="general.landmark_navigation">
                         <MyLink renderAsButton={true} to="/">{t("general.home")}</MyLink>
                 </Navigation>
             </TitleLayout>

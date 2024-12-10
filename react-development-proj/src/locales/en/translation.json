@@ -5,7 +5,8 @@
       "about": "About",
       "config": "Config",
       "guide": "Guide",
-      "home": "Home"
+      "home": "Home",
+      "landmark_navigation": "Navigation"
     },
 
     "pages": {
