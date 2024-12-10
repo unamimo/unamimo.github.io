@@ -1,15 +1,14 @@
 import MyLink from "../../components/MyLink/MyLink";
-import { useTheme } from "../../context/ThemeContext";
 import TitleLayout from "../../layout/TitleLayout";
+import { getActiveTheme } from "../../utils/getActiveTheme";
 import { Navigation, Region } from "../../utils/LandmarkNav";
 import { useTranslation } from 'react-i18next';
 
 export default function About (){
-    const { darkTheme } = useTheme();
     const { t } = useTranslation();
     
     return (
-        <div role="main" className={darkTheme ? "dark-theme" : "light-theme"}>
+        <div role="main" className={getActiveTheme()}>
             <TitleLayout>
                 <Region ariaLabel={"general.about"}>
                     <h1>

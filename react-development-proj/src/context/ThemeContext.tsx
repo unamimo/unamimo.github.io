@@ -6,7 +6,9 @@ import { createContext, useContext, ReactNode, useState } from "react";
 
 interface ThemeContextProps {
     darkTheme: Boolean;
-    toggleTheme: () => void;
+    toggleDarkTheme: () => void;
+    highContrastTheme: Boolean;
+    toggleHighContrastTheme: () => void;
 };
 
 const ThemeContext = createContext<ThemeContextProps | null>(null);
@@ -17,13 +19,18 @@ interface ThemeProviderProps {
 
 const ThemeProvider = ({children}: ThemeProviderProps) => {
     const [darkTheme, setDarkTheme] = useState(false);
+    const [highContrastTheme, setHighContrastTheme] = useState(false);
 
-    const toggleTheme = () => {
+    const toggleDarkTheme = () => {
         setDarkTheme((prevTheme) => !prevTheme);
     };
 
+    const toggleHighContrastTheme = () => {
+        setHighContrastTheme((prevTheme) => !prevTheme)
+    }
+
     return(
-        <ThemeContext.Provider value={{ darkTheme, toggleTheme }}>
+        <ThemeContext.Provider value={{ darkTheme, toggleDarkTheme, highContrastTheme, toggleHighContrastTheme }}>
             {children}
         </ThemeContext.Provider>
     )

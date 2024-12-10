@@ -2,17 +2,19 @@ import './App.css'
 import TitleLayout from '../../layout/TitleLayout'
 import MyLink from '../../components/MyLink/MyLink';
 import { Navigation, Region } from '../../utils/LandmarkNav';
-import { useTheme } from '../../context/ThemeContext';
-import "../../themes/darkTheme.css";  // has global scope, turn into module to make it local
-import "../../themes/lightTheme.css";
 import { useTranslation } from 'react-i18next';
+import { getActiveTheme } from '../../utils/getActiveTheme';
+
+// themes have global scope, turn into module to make local
+import "../../themes/darkTheme.css";
+import "../../themes/lightTheme.css";
+import "../../themes/highContrast.css";
 
 function App() {
-  const { darkTheme } = useTheme();
   const { t } = useTranslation();
   
   return (
-    <div role='main'className={darkTheme ? "dark-theme" : "light-theme"}>
+    <div role='main'className={getActiveTheme()}>
       <TitleLayout>
         {/* Move these in-line styles to a CSS file? Could get messy in the future */}
         <Region ariaLabel='pages.home.title'>
