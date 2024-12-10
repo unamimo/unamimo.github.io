@@ -38,7 +38,7 @@ export default function Guide (){
                             <li>{t("pages.guide.language_switcher.state")}</li>
                         </ul>
                     </Region>
-                    <Region>
+                    <Region ariaLabel="pages.guide.landmark_themes">
                         <p>{t("pages.guide.themes.title")}</p>
                         <ul>
                             <li>{t("pages.guide.themes.explanation")}</li>
@@ -46,7 +46,7 @@ export default function Guide (){
                             <li>{t("pages.guide.themes.wip")}</li>
                         </ul>
                     </Region>
-                    <Region>
+                    <Region ariaLabel="pages.guide.landmark_keyboard_nav">
                         <p>{t("pages.guide.keyboard_nav.title")}</p>
                         <ul>
                             <li>{t("pages.guide.keyboard_nav.tab")}</li>

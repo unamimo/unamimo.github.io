@@ -14,12 +14,12 @@ export default function Config (){
     return (
         <div role="main" className={darkTheme ? "dark-theme" : "light-theme"}>
             <TitleLayout>
-                <Region ariaLabel="Config">
+                <Region ariaLabel="general.config">
                     <h1>
                         {t("general.config")}
                     </h1>
                 </Region>
-                <Region ariaLabel="Config description">
+                <Region ariaLabel="pages.config.description">
                     <p>{t("pages.config.description")}</p>
                 </Region>
                 <TextToSpeechToggle/>

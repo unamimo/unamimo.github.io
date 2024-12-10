@@ -15,7 +15,7 @@ function App() {
     <div role='main'className={darkTheme ? "dark-theme" : "light-theme"}>
       <TitleLayout>
         {/* Move these in-line styles to a CSS file? Could get messy in the future */}
-        <Region ariaLabel='Accessible menu'>
+        <Region ariaLabel='pages.home.title'>
         <div style={{ maxWidth: "500px" }}>
           <h1 style={{ fontSize: "6.5em", textAlign: "center" }}>
             {t("pages.home.title")}
