@@ -8,11 +8,21 @@ import { useTranslation } from 'react-i18next';
 
 export default function ToggleTheme () {
     const { t } = useTranslation();
-    const { toggleTheme } = useTheme();
+    const { toggleTheme, darkTheme } = useTheme();
 
     return(
-        <button onClick={() => toggleTheme()}>
-            {t("components.ToggleTheme.toggle_dark_theme")}
-        </button>
+        <>
+        {
+            darkTheme ? (
+                <button onClick={() => toggleTheme()}>
+                    {t("components.ToggleTheme.toggle_light_theme")}
+                </button>
+            ) : (
+                <button onClick={() => toggleTheme()}>
+                {t("components.ToggleTheme.toggle_dark_theme")}
+                </button>
+            )
+        }
+        </>
     )
 }
