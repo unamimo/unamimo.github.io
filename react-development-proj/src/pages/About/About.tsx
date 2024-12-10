@@ -11,30 +11,36 @@ export default function About (){
     return (
         <div role="main" className={darkTheme ? "dark-theme" : "light-theme"}>
             <TitleLayout>
-                <Region aria-label={"About"}>
+                <Region ariaLabel={"general.about"}>
                     <h1>
                         {t("general.about")}
                     </h1>    
                 </Region>
-                <Region aria-labelledby={"About"}>
-                    <p>
-                        {t("pages.about.description")}
-                    </p>
-                    <p>{t("pages.about.features.title")}</p>
-                    <ul>
-                        <li>{t("pages.about.features.landmark_navigation")}</li>
-                        <li>{t("pages.about.features.screen_reader")}</li>
-                        <li>{t("pages.about.features.language_switcher")}</li>
-                        <li>{t("pages.about.features.dark_theme")}</li>
-                    </ul>
-                    <p>{t("pages.about.accessibility.title")}</p>
-                    <ul>
-                        <li>{t("pages.about.accessibility.axe")}</li>
-                        <li>{t("pages.about.accessibility.compatiable_screen_reader")}</li>
-                        <li>{t("pages.about.accessibility.compliance")}</li>
-                    </ul>
-                </Region>
-                <Navigation>
+                <div>
+                    <Region ariaLabel="pages.about.description">
+                        <p>
+                            {t("pages.about.description")}
+                        </p>
+                    </Region>
+                    <Region ariaLabel="pages.about.landmark_features">
+                        <p>{t("pages.about.features.title")}</p>
+                        <ul>
+                            <li>{t("pages.about.features.landmark_navigation")}</li>
+                            <li>{t("pages.about.features.screen_reader")}</li>
+                            <li>{t("pages.about.features.language_switcher")}</li>
+                            <li>{t("pages.about.features.dark_theme")}</li>
+                        </ul>
+                    </Region>
+                    <Region ariaLabel="pages.about.landmark_accessibility">
+                        <p>{t("pages.about.accessibility.title")}</p>
+                        <ul>
+                            <li>{t("pages.about.accessibility.axe")}</li>
+                            <li>{t("pages.about.accessibility.compatiable_screen_reader")}</li>
+                            <li>{t("pages.about.accessibility.compliance")}</li>
+                        </ul>
+                    </Region>
+                </div>
+                <Navigation ariaLabel="general.landmark_navigation">
                     <MyLink renderAsButton={true} to="/">{t("general.home")}</MyLink>
                 </Navigation>
             </TitleLayout>

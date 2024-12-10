@@ -4,7 +4,8 @@
       "about": "概要",
       "config": "設定",
       "guide": "ガイド",
-      "home": "ホーム"
+      "home": "ホーム",
+      "landmark_navigation": "ナビゲーション"
     },
     "pages": {
       "home": {
@@ -16,44 +17,53 @@
           "title": "機能",
           "landmark_navigation": "ランドマークナビゲーション",
           "screen_reader": "カスタムスクリーンリーダー",
-          "language_switcher": "言語切替",
+          "language_switcher": "言語切り替え",
           "dark_theme": "ダークテーマ"
         },
         "accessibility": {
           "title": "アクセシビリティ",
-          "axe": "AXE（アクセシビリティ）ツールでのテスト時に問題なし（ベストプラクティスを含む）",
-          "compatiable_screen_reader": "スクリーンリーダー（NVDA）と互換性あり",
+          "axe": "AXE（アクセシビリティ）ツールでテストした場合、ベストプラクティスを含めて問題は0",
+          "compatiable_screen_reader": "スクリーンリーダー（NVDA）に対応",
           "compliance": "WCAG 2.1に準拠"
-        }
+        },
+        "landmark_features": "$t(pages.about.features.title), $t(pages.about.features.landmark_navigation), $t(pages.about.features.screen_reader), $t(pages.about.features.language_switcher), $t(pages.about.features.dark_theme).",
+        "landmark_accessibility": "$t(pages.about.accessibility.title), $t(pages.about.accessibility.axe), $t(pages.about.accessibility.compatiable_screen_reader), $t(pages.about.accessibility.compliance)"
       },
       "config": {
-        "description": "ここでは、さまざまな設定オプションが提供されています"
+        "description": "ここではさまざまな設定オプションが提供されています",
+        "narrator_settings": "ナレーター設定",
+        "theme_settings": "テーマ設定"
       },
       "guide": {
-        "description": "現在のウェブサイトで提供されている機能のガイド。",
+        "description": "現在提供されているウェブサイトの機能に関するガイド。",
         "narrator": {
           "title": "ナレーター",
-          "toggle_location": "ナレーターは設定ページで切り替え可能です。",
-          "controls": "ナレーターは、フォーカス（'Tab' またはマウスクリック）されたボタンを読み上げます。",
-          "english_only": "ナレーターは現在、英語のみ対応しています。",
-          "state": "ナレーターの状態はページ更新後に保持されません。"
+          "toggle_location": "ナレーターは設定ページで切り替えられます。",
+          "controls": "ナレーターは、フォーカスがあるボタン（'Tab'またはマウスクリック）を読み上げます。",
+          "english_only": "現在、ナレーターは英語のみ対応しています。",
+          "state": "ナレーターの状態はページのリフレッシュ後に保持されません。"
         },
         "language_switcher": {
-          "title": "言語切替",
-          "buttons": "言語ボタンをクリックすると、即座にその言語に切り替わります。",
-          "state": "言語の状態はページ更新後も保持されます。"
+          "title": "言語切り替え",
+          "buttons": "言語ボタンをクリックすると、その言語に即座に切り替わります。",
+          "state": "言語の状態はページのリフレッシュ後も保持されます。"
         },
         "themes": {
           "title": "テーマ",
           "explanation": "現在、ダークテーマとライトテーマの2つがあります。",
-          "state": "テーマの状態はページ更新後に保持されません。",
-          "wip": "テーマの設計は進行中であり、一部の要素が現在のテーマと一致しない場合があります。"
+          "state": "テーマの状態はページのリフレッシュ後に保持されません。",
+          "wip": "テーマは進行中で、一部の要素が現在のテーマに一致しない場合があります。"
         },
         "keyboard_nav": {
           "title": "キーボードナビゲーション",
-          "tab": "'Tab'キーを使用してインタラクティブ要素間を移動します。",
-          "f6": "'F6'キーを使用してランドマーク間を移動します。ランドマークはページ内のコンテンツを区切るセクションです。"
-        }
+          "tab": "'Tab'ボタンを使用してインタラクティブな要素間を移動します。",
+          "f6": "'F6'ボタンを使用してランドマーク間を移動します。ランドマークはコンテンツを分けるページのセクションです。"
+        },
+        "page_content_landmark": "$t(pages.guide.description)",
+        "landmark_narrator": "$t(pages.guide.narrator.title), $t(pages.guide.narrator.toggle_location) $t(pages.guide.narrator.controls) $t(pages.guide.narrator.english_only) $t(pages.guide.narrator.state)",
+        "landmark_language_switcher": "$t(pages.guide.language_switcher.title), $t(pages.guide.language_switcher.buttons) $t(pages.guide.language_switcher.state)",
+        "landmark_themes": "$t(pages.guide.themes.title), $t(pages.guide.themes.explanation) $t(pages.guide.themes.state) $t(pages.guide.themes.wip)",
+        "landmark_keyboard_nav": "$t(pages.guide.keyboard_nav.title), $t(pages.guide.keyboard_nav.tab), $t(pages.guide.keyboard_nav.f6)"
       },
       "not_found": {
         "title": "404 見つかりません",
@@ -62,11 +72,13 @@
     },
     "components": {
       "TextToSpeechToggle": {
-        "enable_narrator": "ナレーターを有効にする",
-        "disable_narrator": "ナレーターを無効にする"
+        "enable_narrator": "ナレーターを有効化",
+        "disable_narrator": "ナレーターを無効化",
+        "narrator_enabled": "ナレーターが有効化されました"
       },
       "ToggleTheme": {
-        "toggle_dark_theme": "ダークテーマを切り替え"
+        "toggle_dark_theme": "ダークテーマに切り替え",
+        "toggle_light_theme": "ライトテーマに切り替え"
       },
       "ToggleLanguage": {
         "description": "言語を変更",
