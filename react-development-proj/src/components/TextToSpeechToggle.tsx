@@ -14,7 +14,7 @@ export default function TextToSpeechToggle() {
             {isNarratorEnabled ?  (
                 <button onClick={() => turnOff()} onFocus={() => voiceText(t("components.TextToSpeechToggle.disable_narrator"))}>{t("components.TextToSpeechToggle.disable_narrator")}</button>
             ) : (
-                <button onClick={() => {turnOn(); handlePlay("Narrator enabled")}}>{t("components.TextToSpeechToggle.enable_narrator")}</button>
+                <button onClick={() => {turnOn(); handlePlay(t("components.TextToSpeechToggle.narrator_enabled"))}}>{t("components.TextToSpeechToggle.enable_narrator")}</button>
             )
             }
         </>

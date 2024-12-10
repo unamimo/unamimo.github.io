@@ -9,7 +9,7 @@ export default function ToggleLanguage() {
 
     return(
         <div>
-            <p aria-label="change-language">
+            <p aria-label="components.ToggleLanguage.description">
                 {t("components.ToggleLanguage.description")}
             </p>
             <button onClick={ () => i18n.changeLanguage('en')} onFocus={() => voiceText(t("components.ToggleLanguage.english"))} aria-labelledby="change-language">

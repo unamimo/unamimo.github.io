@@ -24,12 +24,16 @@
         "accessibility": {
           "title": "Accessibility",
           "axe": "0 issues when testing with AXE (accessibility) tools, including best practices",
-          "compatiable_screen_reader": "Compaitable with screen readers (NVDA)",
+          "compatiable_screen_reader": "Compatible with screen readers (NVDA)",
           "compliance": "Compliance with WCAG 2.1"
-        }
+        },
+        "landmark_features": "$t(pages.about.features.title), $t(pages.about.features.landmark_navigation), $t(pages.about.features.screen_reader), $t(pages.about.features.language_switcher), $t(pages.about.features.dark_theme).",
+        "landmark_accessibility": "$t(pages.about.accessibility.title), $t(pages.about.accessibility.axe), $t(pages.about.accessibility.compatiable_screen_reader), $t(pages.about.accessibility.compliance)"
       },
       "config": {
-        "description": "Different configuration options are provided here"
+        "description": "Different configuration options are provided here",
+        "narrator_settings": "Narrator settings",
+        "theme_settings": "Theme settings"
       },
       "guide": {
         "description": "A guide to the features that the website currently offers.",
@@ -54,11 +58,14 @@
         "keyboard_nav": {
           "title": "Keyboard navigation",
           "tab": "Use the 'Tab' button to navigate between interactive elements.",
-          "f6": "Use the 'F6' button to navigate between landmarks. Landmarks are sections of the page that seperate content."
+          "f6": "Use the 'F6' button to navigate between landmarks. Landmarks are sections of the page that separate content."
         },
         "page_content_landmark":  "$t(pages.guide.description)",
         "landmark_narrator": "$t(pages.guide.narrator.title), $t(pages.guide.narrator.toggle_location) $t(pages.guide.narrator.controls) $t(pages.guide.narrator.english_only) $t(pages.guide.narrator.state)",
-        "landmark_language_switcher": "$t(pages.guide.language_switcher.title), $t(pages.guide.language_switcher.buttons) $t(pages.guide.language_switcher.state)"
+        "landmark_language_switcher": "$t(pages.guide.language_switcher.title), $t(pages.guide.language_switcher.buttons) $t(pages.guide.language_switcher.state)",
+        "landmark_themes": "$t(pages.guide.themes.title), $t(pages.guide.themes.explanation) $t(pages.guide.themes.state) $t(pages.guide.themes.wip)",
+        "landmark_keyboard_nav": "$t(pages.guide.keyboard_nav.title), $t(pages.guide.keyboard_nav.tab), $t(pages.guide.keyboard_nav.f6)"
+
       },
       "not_found": {
         "title": "404 Not Found",
@@ -69,7 +76,8 @@
     "components": {
       "TextToSpeechToggle": {
         "enable_narrator": "Enable narrator",
-        "disable_narrator": "Disable narrator"
+        "disable_narrator": "Disable narrator",
+        "narrator_enabled": "Narrator enabled"
       },
       "ToggleTheme": {
         "toggle_dark_theme": "Toggle dark theme"
