@@ -49,7 +49,13 @@ export function Region({
     const voiceText = useVoice();
     const { t } = useTranslation();
 
-    console.log(t(ariaLabel));
+    // this function was generated using AI (ChatGPT)
+    // this function stops the region label being used for child elements in the region, such as buttons
+    const handleRegionFocus = (e: React.FocusEvent<HTMLDivElement>) => {
+        if (e.target === ref.current) {
+            voiceText(t(ariaLabel));
+        }
+    };
 
     return (
         <div 
@@ -59,7 +65,7 @@ export function Region({
         aria-label={ariaLabel}
         style={style}
         //converts aria label to translation key
-        onFocus={() => voiceText(t(ariaLabel))}
+        onFocus={handleRegionFocus}
         >
         {children}
         {/* {console.log(props.children.props.children.type)}
