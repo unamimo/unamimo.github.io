@@ -5,30 +5,31 @@
 import { useTheme } from "../context/ThemeContext";
 import { useTranslation } from 'react-i18next';
 import { useVoice } from "../hooks/useVoice";
+import { useState } from "react";
 
 
 export default function ToggleTheme () {
     const { t } = useTranslation();
-    const { toggleDarkTheme, darkTheme, toggleHighContrastTheme, highContrastTheme } = useTheme();
+    const { changeTheme } = useTheme();
     const voiceText = useVoice();
+    const [ selectedTheme, setSelectedTheme ] = useState("light");
+
+    const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        console.log('Theme selected: ', event.target.value);
+        setSelectedTheme(event.target.value);
+        changeTheme(event.target.value);
+        console.log("event.target.value: ", event.target.value);
+    }
 
     return(
         <>
-        {/* dark theme button toggle */}
-        <button
-            onClick={() => toggleDarkTheme()} 
-            onFocus={() => voiceText( darkTheme ? (t("components.ToggleTheme.toggle_light_theme")) : (t("components.ToggleTheme.toggle_dark_theme")) )}
-        >
-            { darkTheme ? (t("components.ToggleTheme.toggle_light_theme")) : (t("components.ToggleTheme.toggle_dark_theme")) }
-        </button>
-
-        {/* high contrast button toggle */}
-        <button
-            onClick={() => toggleHighContrastTheme()} 
-            onFocus={() => voiceText( highContrastTheme? (t("components.ToggleTheme.toggle_light_theme")) : ("Toggle high contrast theme") )}
-        >
-            { highContrastTheme ? (t("components.ToggleTheme.toggle_light_theme")) : ("Toggle high contrast theme") }
-        </button>
+        <label>
+            <select value={selectedTheme} onChange={handleChange}>
+                <option value={"light"}>Light</option>
+                <option value={"dark"}>Dark</option>
+                <option value={"highContrast"}>High contrast</option>
+            </select>
+        </label>
         </>
     )
 }

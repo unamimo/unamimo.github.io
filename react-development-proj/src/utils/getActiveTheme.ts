@@ -1,11 +1,13 @@
 import { useTheme } from "../context/ThemeContext";
 
-export function getActiveTheme() {
-    const { darkTheme, highContrastTheme } = useTheme();
+// converts value to corressponding CSS class name
 
-    if (darkTheme) {
+export function getActiveTheme() {
+    const { theme } = useTheme();
+
+    if (theme == 'dark') {
         return 'dark-theme'
-    } else if (highContrastTheme) {
+    } else if (theme == 'highContrast') {
         return 'high-contrast-theme'
     } else {
         return 'light-theme'
