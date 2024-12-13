@@ -15,19 +15,34 @@ export default function ToggleTheme () {
     const [ selectedTheme, setSelectedTheme ] = useState("light");
 
     const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-        console.log('Theme selected: ', event.target.value);
+        // handles value change
         setSelectedTheme(event.target.value);
+        // changes theme
         changeTheme(event.target.value);
-        console.log("event.target.value: ", event.target.value);
+        // voice the value of whatever is currently selected
+        voiceText(t("components.ToggleTheme."+event.target.value))
     }
 
     return(
         <>
         <label>
-            <select value={selectedTheme} onChange={handleChange}>
-                <option value={"light"}>Light</option>
-                <option value={"dark"}>Dark</option>
-                <option value={"highContrast"}>High contrast</option>
+            {/* Narrator does not work for select component, this is not ideal */}
+            <select value={selectedTheme} onChange={handleChange} onFocus={() => voiceText(t("pages.config.theme_settings"))}>
+                <option
+                    value={"light"} 
+                >
+                    {t("components.ToggleTheme.light")}
+                </option>
+                <option 
+                    value={"dark"} 
+                >
+                    {t("components.ToggleTheme.dark")}
+                </option>
+                <option 
+                    value={"highContrast"} 
+                >
+                    {t("components.ToggleTheme.highContrast")}
+                </option>
             </select>
         </label>
         </>

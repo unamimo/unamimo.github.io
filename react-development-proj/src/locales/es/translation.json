@@ -77,12 +77,13 @@
         "narrator_enabled": "Narrador activado"
       },
       "ToggleTheme": {
-        "toggle_dark_theme": "Cambiar al tema oscuro",
-        "toggle_light_theme": "Cambiar al tema claro"
+        "light": "Oscuro",
+        "dark": "Claro",
+        "highContrast": "Alto contraste"
       },
       "ToggleLanguage": {
         "description": "Cambiar idioma",
-        "english": "Inglés",
+        "english": "Inglés (English)",
         "spanish": "Español",
         "japanese": "Japonés"
       }

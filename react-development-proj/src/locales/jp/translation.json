@@ -77,12 +77,13 @@
         "narrator_enabled": "ナレーターが有効化されました"
       },
       "ToggleTheme": {
-        "toggle_dark_theme": "ダークテーマに切り替え",
-        "toggle_light_theme": "ライトテーマに切り替え"
+        "light": "ダーク",
+        "dark": "ライト",
+        "highContrast": "ハイコントラスト"
       },
       "ToggleLanguage": {
         "description": "言語を変更",
-        "english": "英語",
+        "english": "英語 (English)",
         "spanish": "スペイン語",
         "japanese": "日本語"
       }
