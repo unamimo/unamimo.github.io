@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import style from './MyLink.module.css'
+//import style from './MyLink.module.css'
 import { useVoice } from "../../hooks/useVoice";
 
 
@@ -20,7 +20,7 @@ export default function MyLink ({
         <>
         <Link
             to={to}
-            className={renderAsButton ? style.myLinkAsButton : style.myLink}
+            className={renderAsButton ? "myLinkAsButton" : "myLink"}
             onFocus={() => voiceText(children)}
         >
             {children}
