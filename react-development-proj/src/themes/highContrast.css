@@ -1,5 +1,5 @@
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+:root {
+  font-family:  sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -12,7 +12,7 @@
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-} */
+}
 
 .high-contrast-theme {
     background-color: #000000;
