@@ -1,13 +1,3 @@
-/* 
-CSS here currently doesn't work by calling classname? 
-Will probably need to investigate this in the future
-For now, disabling styles here, until a way to style is decided upon
-*/
-.test {
-    color: red;
-    font-size: 24px;
-}
-
 .myLink {
     text-decoration: "none";
     color: 'inherit';

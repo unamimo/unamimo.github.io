@@ -81,8 +81,9 @@
         "narrator_enabled": "Narrator enabled"
       },
       "ToggleTheme": {
-        "toggle_dark_theme": "Toggle dark theme",
-        "toggle_light_theme": "Toggle light theme"
+        "light": "Light",
+        "dark": "Dark",
+        "highContrast": "High contrast"
       },
       "ToggleLanguage": {
         "description": "Change language",

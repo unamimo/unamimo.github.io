@@ -9,22 +9,14 @@ import { useVoice } from "../hooks/useVoice";
 
 export default function ToggleTheme () {
     const { t } = useTranslation();
-    const { toggleTheme, darkTheme } = useTheme();
+    const { changeTheme } = useTheme();
     const voiceText = useVoice();
 
     return(
         <>
-        {
-            darkTheme ? (
-                <button onClick={() => toggleTheme()} onFocus={() => voiceText(t("components.ToggleTheme.toggle_light_theme"))}>
-                    {t("components.ToggleTheme.toggle_light_theme")}
-                </button>
-            ) : (
-                <button onClick={() => toggleTheme()} onFocus={() => voiceText(t("components.ToggleTheme.toggle_dark_theme"))}>
-                {t("components.ToggleTheme.toggle_dark_theme")}
-                </button>
-            )
-        }
+            <button onClick={() => changeTheme("light")} onFocus={() => voiceText(t("components.ToggleTheme.light"))}>{t("components.ToggleTheme.light")}</button>
+            <button onClick={() => changeTheme("dark")} onFocus={() => voiceText(t("components.ToggleTheme.dark"))}>{t("components.ToggleTheme.dark")}</button>
+            <button onClick={() => changeTheme("highContrast")} onFocus={() => voiceText(t("components.ToggleTheme.highContrast"))}>{t("components.ToggleTheme.highContrast")}</button>
         </>
     )
 }

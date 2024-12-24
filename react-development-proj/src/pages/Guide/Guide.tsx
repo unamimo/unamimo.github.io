@@ -1,15 +1,14 @@
 import { useTranslation } from "react-i18next";
 import MyLink from "../../components/MyLink/MyLink";
-import { useTheme } from "../../context/ThemeContext";
 import TitleLayout from "../../layout/TitleLayout";
 import { Navigation, Region } from "../../utils/LandmarkNav";
+import { getActiveTheme } from "../../utils/getActiveTheme";
 
 export default function Guide (){
     const { t } = useTranslation();
-    const { darkTheme } = useTheme();
     
     return (
-        <div role="main"  className={darkTheme ? "dark-theme" : "light-theme"}>
+        <div role="main"  className={getActiveTheme()}>
             <TitleLayout>
                 <Region ariaLabel="general.guide">
                     <h1>

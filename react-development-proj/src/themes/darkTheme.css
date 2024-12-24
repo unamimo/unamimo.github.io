@@ -1,4 +1,27 @@
 .dark-theme {
     background-color: #333;
-    color: #fff
+    color: #fff;
+
+    button {
+      color: #fff;
+      border: 3px solid #fff;
+    }
+
+    button:focus-visible, button:focus, button:hover {
+      outline: 4px auto -webkit-focus-ring-color;
+    }
+
+    .myLink {
+      text-decoration: "underline";
+      color: '#8080ff';   
+    }
+
+    .myLinkAsButton {
+      border: 3px solid #fff;
+      color: #fff;
+    }
+  
+    .myLinkAsButton:focus-visible, .myLinkAsButton:focus, .myLinkAsButton:hover {
+      outline: 4px auto -webkit-focus-ring-color;
+    }
   }

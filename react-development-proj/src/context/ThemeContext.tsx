@@ -5,8 +5,8 @@ import { createContext, useContext, ReactNode, useState } from "react";
 
 
 interface ThemeContextProps {
-    darkTheme: Boolean;
-    toggleTheme: () => void;
+    theme: string;
+    changeTheme: (passedTheme: string) => void;
 };
 
 const ThemeContext = createContext<ThemeContextProps | null>(null);
@@ -16,14 +16,14 @@ interface ThemeProviderProps {
 };
 
 const ThemeProvider = ({children}: ThemeProviderProps) => {
-    const [darkTheme, setDarkTheme] = useState(false);
+    const [theme, setTheme] = useState('light');
 
-    const toggleTheme = () => {
-        setDarkTheme((prevTheme) => !prevTheme);
-    };
+    const changeTheme = (passedTheme : string) => {
+        setTheme(passedTheme);
+    }
 
     return(
-        <ThemeContext.Provider value={{ darkTheme, toggleTheme }}>
+        <ThemeContext.Provider value={{ theme, changeTheme }}>
             {children}
         </ThemeContext.Provider>
     )

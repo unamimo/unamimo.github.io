@@ -1,5 +1,28 @@
 
 .light-theme {
     background-color: #fff;
-    color: #333
+    color: #333;
+
+    button {
+        color: #333;
+        border: 3px solid #333;
+    }
+
+    button:focus-visible, button:focus, button:hover {
+        outline: 4px auto -webkit-focus-ring-color;
+    }
+
+    .myLink {
+        text-decoration: "underline";
+        color: '#8080ff';   
+    }
+
+    .myLinkAsButton {
+        border: 3px solid #333;
+        color: #333;
+    }
+    
+    .myLinkAsButton:focus-visible, .myLinkAsButton:focus, .myLinkAsButton:hover {
+        outline: 4px auto -webkit-focus-ring-color;
+    }
 }

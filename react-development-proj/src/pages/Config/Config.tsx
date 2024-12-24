@@ -2,17 +2,18 @@ import { useTranslation } from "react-i18next";
 import MyLink from "../../components/MyLink/MyLink";
 import TextToSpeechToggle from "../../components/TextToSpeechToggle";
 import ToggleTheme from "../../components/ToggleTheme";
-import { useTheme } from "../../context/ThemeContext";
 import TitleLayout from "../../layout/TitleLayout";
 import { Navigation, Region } from "../../utils/LandmarkNav";
 import ToggleLanguage from "../../components/ToggleLanguage";
+import { getActiveTheme } from "../../utils/getActiveTheme";
 
 export default function Config (){
-    const { darkTheme } = useTheme();
     const { t } = useTranslation();
+
+    console.log("Active theme: ", getActiveTheme());
     
     return (
-        <div role="main" className={darkTheme ? "dark-theme" : "light-theme"}>
+        <div role="main" className={getActiveTheme()}>
             <TitleLayout>
                 <Region ariaLabel="general.config">
                     <h1>

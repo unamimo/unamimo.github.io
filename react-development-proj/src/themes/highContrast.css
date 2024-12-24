@@ -1,0 +1,62 @@
+.high-contrast-theme {
+    background-color: #000000;
+    color: #ffffff;
+
+    /* Text colour on select  */
+    ::selection {
+        color: #2b2b2b;
+        background: #d6b4fd;
+    }
+
+    button {
+        color: #ffee32;
+        border: 3px solid #ffee32;
+    }
+
+    button:focus-visible, button:hover {
+        border: 3px solid #d6b4fd;
+        color: #d6b4fd;
+    }
+
+    select {
+        display: inline-block;      /* Allows the element to behave like a block for layout (accepts width/height) while still flowing inline with other content. */
+        cursor: pointer;            /* Indicates to users that the element is clickable. */
+        margin: 5px;
+        margin-top: 0px;
+        background-color: inherit;
+        color: #ffee32;
+        padding: 0.5em 1.1em;
+        border-radius: 8px;
+        border: 3px solid #ffee32;
+        font-weight: 500;
+        text-decoration: none;
+        white-space: normal;
+    }
+
+    .myLink {
+        text-decoration: "underline";
+        color: '#8080ff';
+    }
+    
+    .myLinkAsButton {
+        display: inline-block;      /* Allows the element to behave like a block for layout (accepts width/height) while still flowing inline with other content. */
+        cursor: pointer;            /* Indicates to users that the element is clickable. */
+        margin: 30px;
+        margin-top: 0px;
+        background-color: inherit;
+        color: #ffee32;
+        padding: 1.2em 1.8em;
+        border-radius: 8px;
+        border: 3px solid #ffee32;
+        font-size: 1em;
+        font-weight: 500;
+        text-decoration: none;
+        white-space: normal;
+    }
+    
+    .myLinkAsButton:focus-visible, .myLinkAsButton:focus, .myLinkAsButton:hover {
+        /* outline: 4px auto -webkit-focus-ring-color; */
+        border: 3px solid #d6b4fd;
+        color: #d6b4fd;
+    }
+}
