@@ -9,6 +9,7 @@ import { getActiveTheme } from '../../utils/getActiveTheme';
 import "../../themes/darkTheme.css";
 import "../../themes/lightTheme.css";
 import "../../themes/highContrast.css";
+import "../../themes/global.css";
 
 function App() {
   const { t } = useTranslation();
