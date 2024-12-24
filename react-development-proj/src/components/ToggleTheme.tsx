@@ -25,9 +25,8 @@ export default function ToggleTheme () {
 
     return(
         <>
-        <label>
             {/* Narrator does not work for select component, this is not ideal */}
-            <select value={selectedTheme} onChange={handleChange} onFocus={() => voiceText(t("pages.config.theme_settings"))}>
+            <select aria-label="theme-selection" value={selectedTheme} onChange={handleChange} onFocus={() => voiceText(t("pages.config.theme_settings"))}>
                 <option
                     value={"light"} 
                 >
@@ -44,7 +43,6 @@ export default function ToggleTheme () {
                     {t("components.ToggleTheme.highContrast")}
                 </option>
             </select>
-        </label>
         </>
     )
 }
